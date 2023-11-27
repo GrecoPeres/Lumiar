@@ -8,11 +8,22 @@ import Image3 from "../../assets/luminar/3.jpeg";
 import { Image } from "../atoms/Image";
 import { Link } from "react-router-dom";
 import { ChatsCircle, Clock } from "@phosphor-icons/react";
-import { Button } from "../atoms/Button"
+import { Button } from "../atoms/Button";
+import BlogModal from './BlogModal'; // modal
 
 const Blogs = () => {
     const [readMoreIndex, setReadMoreIndex] = useState(-1); // Inicializado com -1
     const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = (index: number) => {
+        setReadMoreIndex(index);
+        setIsModalOpen(true);
+      };
+
+    const closeModal = () => {
+        setReadMoreIndex(-1);
+        setIsModalOpen(false);
+      };
 
     const renderImage = (element: number) => {
         switch (element) {
@@ -25,15 +36,6 @@ const Blogs = () => {
             default:
                 return "";
         }
-    };
-
-    const openModal = (index: number) => {
-        setReadMoreIndex(index);
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
     };
 
     return (
@@ -84,14 +86,7 @@ const Blogs = () => {
                     ))}
                 </div>
                 {isModalOpen && readMoreIndex !== -1 && (
-                    <div className="modal-overlay">
-                        <div className="modal-content">
-                            <button className="close-button" onClick={closeModal}>Fechar</button>
-                            <Image alt={BlogTexts.blogNews[readMoreIndex].title} className="w-full h-48" objectCover="object-cover" image={renderImage(readMoreIndex)} />
-                            <h1>{BlogTexts.blogNews[readMoreIndex].title}</h1>
-                            <p>{BlogTexts.blogNews[readMoreIndex].paragraph}</p>
-                        </div>
-                    </div>
+                    <BlogModal index={readMoreIndex} onClose={closeModal} />
                 )}
             </main>
         </section>

@@ -1,10 +1,22 @@
 import React from 'react';
 import { Text } from "../atoms/Text";
-import { WhatsappLogo, Envelope, MapPin } from "@phosphor-icons/react"; // Importe os ícones
-import { Button } from "../atoms/Button"
+import { WhatsappLogo, Envelope, MapPin } from "@phosphor-icons/react";
+import { Button } from "../atoms/Button";
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Contact = () => {
+    // Estilo do container do mapa
+    const mapContainerStyle = {
+        width: '100%',
+        height: '400px',
+    };
+
+    // Coordenadas do endereço
+    const center = {
+        lat: -21.411245, // Latitude
+        lng: -48.512152, // Longitude
+    };
+
     return (
         <section className="w-full h-auto flex items-center bg-zinc-900">
             <main className="w-full lg:h-[900px] md:h-[800px] flex flex-col justify-center items-center gap-20 lg:gap-28 py-12 md:py-0">
@@ -23,10 +35,32 @@ const Contact = () => {
                                 CEP: 15906-282<br />
                                 Referência: Rua 10 do CECAP
                             </Text>
+
+                            <LoadScript
+                                googleMapsApiKey="AIzaSyAesKL0crhiTJIwIoQs2D0j9NpXCVQeguM"
+                                onLoad={() => console.log('Map script loaded successfully.')}
+                                onError={() => console.error('Error loading map script.')}
+                            >
+                                <GoogleMap
+                                    mapContainerStyle={mapContainerStyle}
+                                    center={center}
+                                    zoom={15}
+                                >
+                                    <Marker position={center} />
+                                </GoogleMap>
+                            </LoadScript>
                         </div>
                     </div>
 
                     <div className="w-1/2 pl-4">
+                    <div className="mt-4">
+                            <Text as="p" className="text-zinc-300 text-sm">
+                                <WhatsappLogo size={16} className="inline-block mr-2" /> (11) 12345-6789
+                            </Text>
+                            <Text as="p" className="text-zinc-300 text-sm">
+                                <Envelope size={16} className="inline-block mr-2" /> contato@seudominio.com
+                            </Text>
+                        </div>
                         <form>
                             <div className="mb-4">
                                 <input type="text" placeholder="Nome" className="w-full p-2 border rounded" />
@@ -47,16 +81,22 @@ const Contact = () => {
                                 Enviar
                             </Button>
                         </form>
-                        <div className="mt-4">
-                            <Text as="p" className="text-zinc-300 text-sm">
-                                <WhatsappLogo size={16} className="inline-block mr-2" /> (11) 12345-6789
-                            </Text>
-                            <Text as="p" className="text-zinc-300 text-sm">
-                                <Envelope size={16} className="inline-block mr-2" /> contato@seudominio.com
-                            </Text>
-                        </div>
                     </div>
                 </div>
+
+                {/* <LoadScript
+                    googleMapsApiKey="AIzaSyC4a7vJfzSaDBtHSJssZOAHKLHxF6rKW2k"
+                >
+                    <GoogleMap
+                        mapContainerStyle={mapContainerStyle}
+                        center={center}
+                        zoom={15}
+                    >
+                        <Marker position={center} />
+                    </GoogleMap>
+                </LoadScript> */}
+
+
             </main>
         </section>
     );
