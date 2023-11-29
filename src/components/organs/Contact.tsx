@@ -55,7 +55,7 @@ const Contact = () => {
                                     <Marker position={markerPosition} options={{
                                         label: {
                                             text: "Posição Teste",
-                                            className: "map-markerr"
+                                            className: "map-marker"
                                         }
                                     }} />
                                 </GoogleMap>

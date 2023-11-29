@@ -24,7 +24,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.map-markerr{
+.map-marker{
     margin-top: -35px;
     background: linear-gradient(#f59e0b, #ef4444);
     /* color: rgb(255 255 255) !important; */
