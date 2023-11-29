@@ -23,3 +23,33 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+.map-markerr{
+    margin-top: -35px;
+    background: linear-gradient(#f59e0b, #ef4444);
+    /* color: rgb(255 255 255) !important; */
+    padding: 4px;
+    border-radius: 0.7rem;
+}
+
+.whats {
+    background-color: #25d366; /* Verde predominante do WhatsApp */
+    color: #fff; /* Texto em branco para contraste */
+    padding: 12px; /* Adapte o preenchimento conforme necessário */
+    text-align: center;
+    font-size: 18px;
+    border-radius: 40px;
+    animation: pulse 1.5s infinite; /* Adiciona a animação de pulsação */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

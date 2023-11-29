@@ -199,13 +199,13 @@ export const FooterTexts = {
         caption: "Contato",
         names: [
             {
-                name: "ENDEREÇO, Olímpia, CEP, SP",
+                name: "Rua Cavalheiro Torquato Rizzi, 1600, Ribeirão Preto, 14020-348, SP",
             },
             {
-                name: "atualizar@gmail.com",
+                name: "lumiar.orcamento@gmail.com",
             },
             {
-                name: "+55 (17) 9 9999-9999",
+                name: "+55 (17) 99225-7694",
             }
         ]
     },

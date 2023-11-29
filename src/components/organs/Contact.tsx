@@ -13,8 +13,14 @@ const Contact = () => {
 
     // Coordenadas do endereço
     const center = {
-        lat: -21.411245, // Latitude
-        lng: -48.512152, // Longitude
+        lat: -21.209281, // Latitude
+        lng: -47.801922, // Longitude
+    };
+
+    // Coordenadas para o marcador
+    const markerPosition = {
+        lat: -21.209,
+        lng: -47.800,
     };
 
     return (
@@ -46,7 +52,12 @@ const Contact = () => {
                                     center={center}
                                     zoom={15}
                                 >
-                                    <Marker position={center} />
+                                    <Marker position={markerPosition} options={{
+                                        label: {
+                                            text: "Posição Teste",
+                                            className: "map-markerr"
+                                        }
+                                    }} />
                                 </GoogleMap>
                             </LoadScript>
                         </div>
@@ -55,10 +66,10 @@ const Contact = () => {
                     <div className="w-1/2 pl-4">
                     <div className="mt-4">
                             <Text as="p" className="text-zinc-300 text-sm">
-                                <WhatsappLogo size={16} className="inline-block mr-2" /> (11) 12345-6789
+                                <WhatsappLogo size={16} className="inline-block mr-2" /> (17) 99225-7694
                             </Text>
                             <Text as="p" className="text-zinc-300 text-sm">
-                                <Envelope size={16} className="inline-block mr-2" /> contato@seudominio.com
+                                <Envelope size={16} className="inline-block mr-2" /> lumiar.orcamento@gmail.com
                             </Text>
                         </div>
                         <form>
@@ -83,19 +94,6 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-
-                {/* <LoadScript
-                    googleMapsApiKey="AIzaSyC4a7vJfzSaDBtHSJssZOAHKLHxF6rKW2k"
-                >
-                    <GoogleMap
-                        mapContainerStyle={mapContainerStyle}
-                        center={center}
-                        zoom={15}
-                    >
-                        <Marker position={center} />
-                    </GoogleMap>
-                </LoadScript> */}
-
 
             </main>
         </section>
