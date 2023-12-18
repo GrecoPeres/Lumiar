@@ -19,8 +19,8 @@ const Contact = () => {
 
     // Coordenadas para o marcador
     const markerPosition = {
-        lat: -21.209,
-        lng: -47.800,
+        lat: -21.209, // Latitude
+        lng: -47.800, // Longitude
     };
 
     return (
@@ -50,7 +50,7 @@ const Contact = () => {
                                 <GoogleMap
                                     mapContainerStyle={mapContainerStyle}
                                     center={center}
-                                    zoom={15 as number}  // Convertido para número LEMBRAR
+                                    zoom={Number(15)}
                                 >
                                     <Marker position={markerPosition} options={{
                                         label: {
