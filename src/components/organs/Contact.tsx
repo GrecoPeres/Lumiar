@@ -13,14 +13,14 @@ const Contact = () => {
 
     // Coordenadas do endereço
     const center = {
-        lat: -21.209281, // Latitude
-        lng: -47.801922, // Longitude
+        lat: Number('-21.209281'), // Convertendo a string para número (LEMBRAR)
+        lng: Number('-47.801922'), // Convertendo a string para número (LEMBRAR)
     };
 
     // Coordenadas para o marcador
     const markerPosition = {
-        lat: -21.209, // Latitude
-        lng: -47.800, // Longitude
+        lat: Number('-21.209'), // Convertendo a string para número (LEMBRAR)
+        lng: Number('-47.800'), // Convertendo a string para número (LEMBRAR)
     };
 
     return (
