@@ -50,7 +50,7 @@ const Contact = () => {
                                 <GoogleMap
                                     mapContainerStyle={mapContainerStyle}
                                     center={center}
-                                    zoom={15}
+                                    zoom={15 as number}  // Convertido para número LEMBRAR
                                 >
                                     <Marker position={markerPosition} options={{
                                         label: {
