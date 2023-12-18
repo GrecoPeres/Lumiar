@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Text } from "../atoms/Text";
 import { WhatsappLogo, Envelope, MapPin } from "@phosphor-icons/react";
 import { Button } from "../atoms/Button";

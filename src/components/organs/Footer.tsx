@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { Text } from "../atoms/Text"
-import { Barbell, EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react"
+import { EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react"
 import { FooterTexts } from "../particles/Data"
 import { List } from "../atoms/List"
 import { useCallback } from "react"

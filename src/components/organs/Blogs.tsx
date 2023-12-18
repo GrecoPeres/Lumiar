@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
 import { BlogTexts } from "../particles/Data";
