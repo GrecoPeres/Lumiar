@@ -2,26 +2,26 @@
 import { Text } from "../atoms/Text";
 import { WhatsappLogo, Envelope, MapPin } from "@phosphor-icons/react";
 import { Button } from "../atoms/Button";
-// import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const Contact = () => {
     // Estilo do container do mapa
-    // const mapContainerStyle = {
-    //     width: '100%',
-    //     height: '400px',
-    // };
+    const mapContainerStyle = {
+        width: '100%',
+        height: '400px',
+    };
 
-    // // Coordenadas do endereço
-    // const center = {
-    //     lat: Number('-21.209281'), // Convertendo a string para número (LEMBRAR)
-    //     lng: Number('-47.801922'), // Convertendo a string para número (LEMBRAR)
-    // };
+    // Coordenadas do endereço
+    const center = {
+        lat: Number('-21.209281'), // Convertendo a string para número (LEMBRAR)
+        lng: Number('-47.801922'), // Convertendo a string para número (LEMBRAR)
+    };
 
-    // // Coordenadas para o marcador
-    // const markerPosition = {
-    //     lat: Number('-21.209'), // Convertendo a string para número (LEMBRAR)
-    //     lng: Number('-47.800'), // Convertendo a string para número (LEMBRAR)
-    // };
+    // Coordenadas para o marcador
+    const markerPosition = {
+        lat: Number('-21.209'), // Convertendo a string para número (LEMBRAR)
+        lng: Number('-47.800'), // Convertendo a string para número (LEMBRAR)
+    };
 
     return (
         <section className="w-full h-auto flex items-center bg-zinc-900">
@@ -42,7 +42,7 @@ const Contact = () => {
                                 Referência: Rua 10 do CECAP
                             </Text>
 
-                            {/* <LoadScript
+                            <LoadScript
                                 googleMapsApiKey="AIzaSyAesKL0crhiTJIwIoQs2D0j9NpXCVQeguM"
                                 onLoad={() => console.log('Map script loaded successfully.')}
                                 onError={() => console.error('Error loading map script.')}
@@ -59,7 +59,7 @@ const Contact = () => {
                                         }
                                     }} />
                                 </GoogleMap>
-                            </LoadScript> */}
+                            </LoadScript>
                         </div>
                     </div>
 
@@ -83,7 +83,11 @@ const Contact = () => {
                                 <input type="tel" placeholder="Telefone" className="w-full p-2 border rounded" />
                             </div>
                             <div className="mb-4">
-                                <textarea placeholder="Mensagem" className="w-full p-2 border rounded" rows="4" />
+                            <textarea
+                                placeholder="Mensagem"
+                                className="w-full p-2 border rounded"
+                                rows={4}
+                            />
                             </div>
                             <Button
                                 className="px-6 py-2 bg-gradient-to-r from-red-500 to-amber-500 text-white rounded"
