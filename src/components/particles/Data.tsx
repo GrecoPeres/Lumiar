@@ -49,7 +49,7 @@ export const HeroTexts = [
 export const AboutTexts = {
     firstText: "QUEM SOMOS",
     secondText: "Lumiar",
-    caption: "BEM-VINDO A LUMINAR!",
+    caption: "BEM-VINDO A LUMIAR!",
     paragraph1: `A Lumiar Soluções Contra Incêndio foi fundada em 2023 e é especializada na elaboração e aprovação de Projetos de Prevenção e Combate a Incêndio para todos os tipos de ocupações, sejam elas residenciais, comerciais e industriais. Atuamos também na instalação e manutenção dos sistemas de proteção, tais como detecção e alarme de incêndio, hidrantes, iluminação, sinalização de emergência, extintores de incêndio e outros.
     A empresa conta com uma equipe altamente qualificada de engenheiros e técnicos com vasta experiência no mercado e trazem como diferencial um atendimento personalizado, avaliando a necessidade individual de cada parceiro e oferecendo as melhores opções, de acordo com as normas e  técnicas vigentes.` ,
 }
@@ -73,30 +73,36 @@ export const OfferTexts = {
     ],
 }
 
-/* export const MembershipPlans = {
-    firstText: "Pricing Tables",
-    secondText: "Membership Plans",
+export const MembershipPlans = {
+    firstText: "Conheça nosso trabalho",
+    secondText: "SERVIÇOS",
     cards: [
         {
-            amount: 8,
-            duration: "day",
-            caption: "One Day Training",
-            benefits: ["One time access to all clubs", "Group trainer", "Book a Group class", "Fitness orientation"]
+            amount: "AVCB e CLCB",
+            // duration: "day",
+            caption: "",
+            benefits: ["CLCB", "Certificado de licença do corpo de bombeiros (CLCB) é o documento obrigatório para edificações multifamiliares, comerciais e industriais que atuam com ocupação de baixo e médio risco de incêndio, com até 750 m² e até 6m de altura. Cada edificação possui medidas de segurança específicas que são determinadas pela sua ocupação e área total construída. Lembrando que manter o seu Certificado de licença do corpo de bombeiros em dia é obrigatório além das medidas de combate a incêndio, algo muito importante para manter a proteção do seu patrimônio e para todas as pessoas que frequentam seu ambiente. Entre em contato conosco para mais informações, seja para a primeira emissão, renovação do seu CLCB ou para sanar qualquer dúvida pertinente.", "AVCB","Auto de vistoria do corpo de bombeiros (AVCB), é o documento obrigatório para edificações acima de 750 m², onde a ocupação apresenta um risco mais elevado para a edificação e para as pessoas que o frequentam. Cada edificação possui as medidas de segurança específicas, mas tradicionalmente, quando se trata de AVCB é obrigatório a instalação de central de alarme, sistema de hidrantes, sistema de iluminação de emergência, entre outros. Para tirar dúvidas sobre quais medidas a sua edificação necessita, entre em contato conosco. Contamos com uma equipe especializada para lhe atender."]
         },
         {
-            amount: 49,
-            duration: "month",
-            caption: "12 Months Membership",
-            benefits: ["Group classes", "Discuss fitness goals", "Group trainer", "Fitness orientation"]
+            amount: "LAUDOS",
+            duration: "",
+            caption: "",
+            benefits: ["O Laudo de estanqueidade visa o teste da tubulação de gás, onde será atestada a conformidade de todo o sistema, assim como a central GLP, tubulação e materiais aplicados. O teste é feito mediante a presença do técnico especializado com equipamento específico e após a conclusão é gerado o laudo de conformidade quando atestado toda a conformidade das instalações."]
         },
         {
-            amount: 65,
+            amount: "EMISSÃO DE PROJETO",
+            duration: "",
+            caption: "",
+            benefits: ["Caso sua edificação ultrapasse os 750 m² é obrigatório a emissão e aprovação de projeto de proteção de combate a incêndio (PPCI), onde a partir de 1500 m² o projeto precisa ser aprovado junto ao corpo de bombeiros, e somente após a aprovação, a execução das medidas de segurança contra incêndio vigente devem ser aplicadas."]
+        },
+        {
+            amount: "ATUALIZAÇÃO DE PROJETO",
             duration: "month",
-            caption: "Pay Every Month",
-            benefits: ["Group classes", "Discuss fitness goals", "Group trainer", "Fitness orientation"]
+            caption: "",
+            benefits: ["A atualização de projeto de proteção contra incêndio é necessária quando há uma ampliação ou alteração da área construída da edificação, onde esta alteração influencia diretamente as medidas de segurança contra incêndio exigidas para a edificação."]
         }
     ]
-} */
+}
 
 export const ContactTexts = {
     firstText: "Entre em contato",

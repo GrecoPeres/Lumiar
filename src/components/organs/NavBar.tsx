@@ -37,7 +37,7 @@ const NavBar = () => {
                         <Barbell size={25} color="currentColor" weight="fill" />
                     </Text> */}
                     <Text as="span" className="text-white"></Text>
-                    <Text as="span" className="bg-gradient-to-r from-amber-500 to-red-500 bg-clip-text text-transparent">Luminar</Text>
+                    <Text as="span" className="bg-gradient-to-r from-amber-500 to-red-500 bg-clip-text text-transparent">Lumiar</Text>
                 </Link>
                 <div className="lg:flex hidden items-center h-full gap-20">
                     <ul className="flex items-center justify-center h-full gap-4 relative before:w-full before:h-0.5 before:absolute before:bottom-0 before:left-0 before:bg-zinc-400">

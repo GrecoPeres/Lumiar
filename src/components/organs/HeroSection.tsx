@@ -3,7 +3,8 @@ import { Image } from "../atoms/Image"
 
 import Image1 from "../../assets/luminar/5.jpg";
 import Image2 from "../../assets/luminar/6.jpg"
-import Image3 from "../../assets/luminar/5.jpg"
+// import Image3 from "../../assets/luminar/5.jpg"
+import Image4 from "../../assets/luminar/7.jpeg"
 import { HeroTexts } from "../particles/Data";
 import Slider from "react-slick";
 import { Text } from "../atoms/Text";
@@ -50,7 +51,7 @@ const HeroSection = () => {
             case 1:
                 return Image2;
             case 2:
-                return Image3;
+                return Image4;
             default:
                 return "";
         }
