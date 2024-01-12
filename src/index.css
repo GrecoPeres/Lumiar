@@ -42,6 +42,36 @@ input[type=number] {
     animation: pulse 1.5s infinite; /* Adiciona a animação de pulsação */
 }
 
+.MuiPaper-root{
+     background-color: rgb(0, 0, 0) !important;
+     color: white !important;
+}
+
+.MuiTypography-colorTextSecondary{
+    color: white !important;
+}
+
+.MuiDialogContentText-root{
+    margin-top: 1rem !important;
+}
+
+.card-slider-item {
+    height: 300px; /* Ajuste a altura desejada */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Isso centraliza verticalmente o título */
+  }
+  
+  .card-slider-item h6 {
+    margin-bottom: 10px; /* Espaço abaixo do título */
+  }
+
+  .center-div{
+    justify-content: center !important;
+    text-align: center !important;
+    align-itens: center !important;
+  }
+
 @keyframes pulse {
     0% {
         transform: scale(1);

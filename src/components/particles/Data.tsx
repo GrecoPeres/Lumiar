@@ -4,7 +4,7 @@ export const NavLinks = [
         url: "/"
     },
     {
-        name: "QUEM SOMOS",
+        name: "Quem somos",
         url: "/about"
     },
     {
@@ -30,17 +30,17 @@ export const NavLinks = [
 export const HeroTexts = [
     {
         Heading: "1. Diferencial",
-        Paragraph: `Desenvolvemos o Projeto de Prevenção e Combate a Incêndio de forma personalizada, visando a otimização dos recursos de modo a apresentar o melhor custo-benefício para os nossos parceiros` ,
+        Paragraph: `Desenvolvemos o Projeto de Prevenção e Combate a Incêndio de forma personalizada, visando a otimização dos recursos de modo a apresentar o melhor custo-benefício para os nossos parceiros;` ,
         Button: "Join Now!"
     },
     {
         Heading: "2. Diferencial",
-        Paragraph: `Possuímos equipe qualificada e em constante processo de treinamento e atualização, o que permite o cumprimento dos prazos estabelecidos e o elevado nível de qualidade das obras`,
+        Paragraph: `Possuímos equipe qualificada e em constante processo de treinamento e atualização, o que permite o cumprimento dos prazos estabelecidos e o elevado nível de qualidade das obras;`,
         Button: "Sign Up Today!"
     },
     {
         Heading: "3. Diferencial",
-        Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva",
+        Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
         Button: "Enroll Now!"
     }
 ]
@@ -51,7 +51,7 @@ export const AboutTexts = {
     secondText: "Lumiar",
     caption: "BEM-VINDO A LUMIAR!",
     paragraph1: `A Lumiar Soluções Contra Incêndio foi fundada em 2023 e é especializada na elaboração e aprovação de Projetos de Prevenção e Combate a Incêndio para todos os tipos de ocupações, sejam elas residenciais, comerciais e industriais. Atuamos também na instalação e manutenção dos sistemas de proteção, tais como detecção e alarme de incêndio, hidrantes, iluminação, sinalização de emergência, extintores de incêndio e outros.
-    A empresa conta com uma equipe altamente qualificada de engenheiros e técnicos com vasta experiência no mercado e trazem como diferencial um atendimento personalizado, avaliando a necessidade individual de cada parceiro e oferecendo as melhores opções, de acordo com as normas e  técnicas vigentes.` ,
+    A empresa conta com uma equipe altamente qualificada de engenheiros e técnicos com vasta experiência no mercado e trazem como diferencial um atendimento personalizado, avaliando a necessidade individual de cada parceiro e oferecendo as melhores opções, de acordo com as normas e técnicas vigentes.` ,
 }
 
 export const OfferTexts = {
@@ -68,7 +68,7 @@ export const OfferTexts = {
         }
         , {
             listCaption: "Valores",
-            text: "personalização, transparência, sustentabilidade, responsabilidade social, ética e comprometimento.",
+            text: "Personalização, transparência, sustentabilidade, responsabilidade social, ética e comprometimento.",
         }
     ],
 }
@@ -79,9 +79,9 @@ export const MembershipPlans = {
     cards: [
         {
             amount: "AVCB e CLCB",
-            // duration: "day",
+            duration: "",
             caption: "",
-            benefits: ["CLCB", "Certificado de licença do corpo de bombeiros (CLCB) é o documento obrigatório para edificações multifamiliares, comerciais e industriais que atuam com ocupação de baixo e médio risco de incêndio, com até 750 m² e até 6m de altura. Cada edificação possui medidas de segurança específicas que são determinadas pela sua ocupação e área total construída. Lembrando que manter o seu Certificado de licença do corpo de bombeiros em dia é obrigatório além das medidas de combate a incêndio, algo muito importante para manter a proteção do seu patrimônio e para todas as pessoas que frequentam seu ambiente. Entre em contato conosco para mais informações, seja para a primeira emissão, renovação do seu CLCB ou para sanar qualquer dúvida pertinente.", "AVCB","Auto de vistoria do corpo de bombeiros (AVCB), é o documento obrigatório para edificações acima de 750 m², onde a ocupação apresenta um risco mais elevado para a edificação e para as pessoas que o frequentam. Cada edificação possui as medidas de segurança específicas, mas tradicionalmente, quando se trata de AVCB é obrigatório a instalação de central de alarme, sistema de hidrantes, sistema de iluminação de emergência, entre outros. Para tirar dúvidas sobre quais medidas a sua edificação necessita, entre em contato conosco. Contamos com uma equipe especializada para lhe atender."]
+            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
         },
         {
             amount: "LAUDOS",
@@ -90,16 +90,22 @@ export const MembershipPlans = {
             benefits: ["O Laudo de estanqueidade visa o teste da tubulação de gás, onde será atestada a conformidade de todo o sistema, assim como a central GLP, tubulação e materiais aplicados. O teste é feito mediante a presença do técnico especializado com equipamento específico e após a conclusão é gerado o laudo de conformidade quando atestado toda a conformidade das instalações."]
         },
         {
-            amount: "EMISSÃO DE PROJETO",
+            amount: "PROJETOS",
             duration: "",
             caption: "",
             benefits: ["Caso sua edificação ultrapasse os 750 m² é obrigatório a emissão e aprovação de projeto de proteção de combate a incêndio (PPCI), onde a partir de 1500 m² o projeto precisa ser aprovado junto ao corpo de bombeiros, e somente após a aprovação, a execução das medidas de segurança contra incêndio vigente devem ser aplicadas."]
         },
         {
-            amount: "ATUALIZAÇÃO DE PROJETO",
-            duration: "month",
+            amount: "OBRAS E MANUTENÇÕES",
+            duration: "",
             caption: "",
-            benefits: ["A atualização de projeto de proteção contra incêndio é necessária quando há uma ampliação ou alteração da área construída da edificação, onde esta alteração influencia diretamente as medidas de segurança contra incêndio exigidas para a edificação."]
+            benefits: ["Caso sua edificação ultrapasse os 750 m² é obrigatório a emissão e aprovação de projeto de proteção de combate a incêndio (PPCI), onde a partir de 1500 m² o projeto precisa ser aprovado junto ao corpo de bombeiros, e somente após a aprovação, a execução das medidas de segurança contra incêndio vigente devem ser aplicadas."]
+        },
+        {
+            amount: "SERVIÇOS ELÉTRICOS",
+            duration: "",
+            caption: "",
+            benefits: ["Caso sua edificação ultrapasse os 750 m² é obrigatório a emissão e aprovação de projeto de proteção de combate a incêndio (PPCI), onde a partir de 1500 m² o projeto precisa ser aprovado junto ao corpo de bombeiros, e somente após a aprovação, a execução das medidas de segurança contra incêndio vigente devem ser aplicadas."]
         }
     ]
 }
@@ -140,7 +146,7 @@ export const BlogTexts = {
         {
             caption: "Iluminação de emergência",
             title: ``,
-            paragraph: `A iluminação de emergência deve permitir o clareamento das rotas de fuga no momento do abandono da edificação, bem como, possibilitar o controle visual das áreas abandonadas para localizar pessoas impedidas de locomover-se. 
+            paragraph: `A iluminação de emergência deve permitir o clareamento das rotas de fuga no momento do abandono da edificação, bem como, possibilitar o controle visual das áreas abandonadas para localizar pessoas impedidas de locomover-se.
             Deve ser corretamente projetada, a fim de atingir os objetivos propostos, bem como ser executada seguindo as normativas previstas na IT 18/2019 e NBR 10.898.
             A Lumiar Soluções conta com equipe qualificada para o desenvolvimento de projeto e instalação e manutenção da iluminação de emergência na sua edificação. Para saber mais, entre em contato conosco através dos links abaixo.`,
             time: "",

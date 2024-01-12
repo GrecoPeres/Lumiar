@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { animateScroll } from "react-scroll";
 import NavBar from "./components/organs/NavBar"
 import Home from "./components/pages/Home";
+import NovaPagina from "./components/pages/NovaPagina";
 import Footer from "./components/organs/Footer";
 
 
@@ -25,6 +26,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* <Route path="/nova-pagina" element={<NovaPagina />} /> */}
+        <Route path="/nova-pagina/:categoria" element={<NovaPagina />} />
       </Routes>
       <Footer />
     </div>
