@@ -87,25 +87,25 @@ export const MembershipPlans = {
             amount: "LAUDOS",
             duration: "",
             caption: "",
-            benefits: ["O Laudo de estanqueidade visa o teste da tubulação de gás, onde será atestada a conformidade de todo o sistema, assim como a central GLP, tubulação e materiais aplicados. O teste é feito mediante a presença do técnico especializado com equipamento específico e após a conclusão é gerado o laudo de conformidade quando atestado toda a conformidade das instalações."]
+            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
         },
         {
             amount: "PROJETOS",
             duration: "",
             caption: "",
-            benefits: ["Caso sua edificação ultrapasse os 750 m² é obrigatório a emissão e aprovação de projeto de proteção de combate a incêndio (PPCI), onde a partir de 1500 m² o projeto precisa ser aprovado junto ao corpo de bombeiros, e somente após a aprovação, a execução das medidas de segurança contra incêndio vigente devem ser aplicadas."]
+            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
         },
         {
             amount: "OBRAS E MANUTENÇÕES",
             duration: "",
             caption: "",
-            benefits: ["Caso sua edificação ultrapasse os 750 m² é obrigatório a emissão e aprovação de projeto de proteção de combate a incêndio (PPCI), onde a partir de 1500 m² o projeto precisa ser aprovado junto ao corpo de bombeiros, e somente após a aprovação, a execução das medidas de segurança contra incêndio vigente devem ser aplicadas."]
+            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
         },
         {
             amount: "SERVIÇOS ELÉTRICOS",
             duration: "",
             caption: "",
-            benefits: ["Caso sua edificação ultrapasse os 750 m² é obrigatório a emissão e aprovação de projeto de proteção de combate a incêndio (PPCI), onde a partir de 1500 m² o projeto precisa ser aprovado junto ao corpo de bombeiros, e somente após a aprovação, a execução das medidas de segurança contra incêndio vigente devem ser aplicadas."]
+            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
         }
     ]
 }
