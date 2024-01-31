@@ -51,12 +51,35 @@ const Membership = () => {
     </div>
   );
 
+  // const handleNavigateToNovaPagina = () => {
+  //   console.log("selectedCard:", selectedCard);
+  
+  //   if (selectedCard && selectedCard.amount) {
+  //     const categoria = selectedCard.amount.toLowerCase();
+  //     console.log("selectedCard.categoria:", categoria);
+  //     navigate(`/nova-pagina/${categoria}`);
+  //     closeModal();
+  //   } else {
+  //     console.error("Categoria não definida no card selecionado.");
+  //   }
+  // };
+
   const handleNavigateToNovaPagina = () => {
-    if (selectedCard) {
-      navigate(`/nova-pagina/${selectedCard?.categoria}`);
-      closeModal();
+    console.log("selectedCard:", selectedCard);
+  
+    if (selectedCard && selectedCard.amount) {
+      const categoria = selectedCard.amount.toLowerCase();
+      console.log("selectedCard.categoria:", categoria);
+  
+      // Aguarda a conclusão da navegação antes de fechar o modal
+      navigate(`/nova-pagina/${categoria}`).then(() => {
+        closeModal();
+      });
+    } else {
+      console.error("Categoria não definida no card selecionado.");
     }
   };
+  
 
   // Configurações do CAROUSEL para CARDS
   const settings = {
@@ -117,7 +140,7 @@ const Membership = () => {
               className={`w-full flex flex-col items-center text-center gap-4 border border-zinc-500 transition-all duration-200 cursor-pointer hover:border-red-500/50 py-10"}`}
             >
               <img
-                src={index === 0 ? avcb : index === 1 ? laudos : index === 2 ? projetos : index === 3 ? obras_manutencao : index === 4 ? servicos_eletricos : undefined}
+                src={index === 0 ? avcb : index === 1 ? laudos : index === 2 ? projetos : index === 3 ? obras_manutencao : index === 4 ? servicos_eletricos : '/caminho-para-imagem-padrao.jpg'}
                 alt={`Client ${index + 1}`}
                 className="w-full h-80 object-cover mb-4 rounded-md"
               />
@@ -159,15 +182,16 @@ const Membership = () => {
           <DialogContentText>{selectedCard?.benefits}</DialogContentText>
         </DialogContent>
         <DialogActions>
-        <Link to={`/nova-pagina/${selectedCard?.categoria}`}>
-            <Button
-                className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500"
-                style={{ borderRadius: '30px' }}
-                onClick={closeModal}
-                color="primary">
-                Ir para Nova Página
-            </Button>
-        </Link>
+        {/* <Link to={`/nova-pagina/${selectedCard?.categoria}`}>
+        </Link> */}
+        <Button
+          className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500"
+          style={{ borderRadius: '30px' }}
+          onClick={handleNavigateToNovaPagina}
+          color="primary"
+          >
+          Ir para Nova Página
+        </Button>
         </DialogActions>
       </Dialog>
     </section>
