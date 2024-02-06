@@ -83,3 +83,9 @@ input[type=number] {
         transform: scale(1);
     }
 }
+
+.border-4{
+    /* border-radius: 4rem; */
+    border-image: linear-gradient(90deg, rgba(245,158,11,1) 0%, rgba(239,68,68,1) 80%);
+    border-image-slice: 1;
+}
