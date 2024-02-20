@@ -29,19 +29,29 @@ export const NavLinks = [
 
 export const HeroTexts = [
     {
-        Heading: "1. Diferencial",
-        Paragraph: `Desenvolvemos o Projeto de Prevenção e Combate a Incêndio de forma personalizada, visando a otimização dos recursos de modo a apresentar o melhor custo-benefício para os nossos parceiros;` ,
-        Button: "Join Now!"
+        Heading: "AVCB e CLCB",
+        Paragraph: `Desenvolvemos o Projeto de Prevenção e Combate a Incêndio de forma personalizada, visando a otimização dos recursos de modo a apresentar o melhor custo-benefício para os nossos parceiros; `,
+        Button: "Ver mais!"
     },
     {
-        Heading: "2. Diferencial",
+        Heading: "LAUDOS",
         Paragraph: `Possuímos equipe qualificada e em constante processo de treinamento e atualização, o que permite o cumprimento dos prazos estabelecidos e o elevado nível de qualidade das obras;`,
-        Button: "Sign Up Today!"
+        Button: "Ver mais!"
     },
     {
-        Heading: "3. Diferencial",
+        Heading: "PROJETOS",
         Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
-        Button: "Enroll Now!"
+        Button: "Ver mais!"
+    },
+    {
+        Heading: "OBRAS E MANUTENÇÕES",
+        Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
+        Button: "Ver mais!"
+    },
+    {
+        Heading: "SERVIÇOS ELÉTRICOS",
+        Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
+        Button: "Ver mais!"
     }
 ]
 
@@ -214,12 +224,12 @@ export const FooterTexts = {
                 name: "Rua Cavalheiro Torquato Rizzi, 1600, Ribeirão Preto, 14020-348, SP",
             },
             {
-                name: "lumiar.orcamento@gmail.com",
+                name: "orcamentos@lumiarsolucoes.com.br",
             },
             {
-                name: "+55 (17) 99225-7694",
+                name: "+55 (17) 1799162-7172",
             }
         ]
     },
-    copyright: "Copyright 2023. Todos os direitos reservados"
+    copyright: "Copyright 2024. Todos os direitos reservados"
 }

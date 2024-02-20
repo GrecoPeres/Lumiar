@@ -1,10 +1,10 @@
 import { useCallback, useRef } from "react";
 import { Image } from "../atoms/Image"
-
-import Image1 from "../../assets/luminar/5.jpg";
-import Image2 from "../../assets/luminar/6.jpg"
-// import Image3 from "../../assets/luminar/5.jpg"
-import Image4 from "../../assets/luminar/7.jpeg"
+import avcb from "../../assets/luminar/AVCB_e_CLCB.jpg";
+import laudos from "../../assets/luminar/LAUDOS.jpg";
+import projetos from "../../assets/luminar/PROJETOS.jpg";
+import obras_manutencao from "../../assets/luminar/OBRAS_MANUTENCOES.jpg";
+import servicos_eletricos from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
 import { HeroTexts } from "../particles/Data";
 import Slider from "react-slick";
 import { Text } from "../atoms/Text";
@@ -47,11 +47,15 @@ const HeroSection = () => {
     const renderProfileImg = useCallback((element: number) => {
         switch (element) {
             case 0:
-                return Image1;
+                return avcb;
             case 1:
-                return Image2;
+                return laudos;
             case 2:
-                return Image4;
+                return projetos;
+            case 3:
+                return obras_manutencao;
+            case 4:
+                return servicos_eletricos;
             default:
                 return "";
         }
@@ -77,21 +81,20 @@ const HeroSection = () => {
                                         {hero.Paragraph}
                                     </Slide>
                                 </Text>
-                                {/* 
+                                
                                 <div className="flex items-center gap-8">
-                                    <Slide direction="up">
+                                    {/* <Slide direction="up">
                                         <Button type="button" className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500">
                                             {hero.Button}
                                         </Button>
-                                    </Slide>
-                                    <Slide direction="up">
+                                    </Slide> */}
+                                    {/* <Slide direction="up">
                                         <a href="/" className="flex items-center gap-2 text-red-500 hover:text-amber-500 group">
-                                            <YoutubeLogo size={20} color="currentColor" weight="fill" />
                                             <Text as="span" className="text-zinc-100 group-hover:text-amber-500 uppercase text-xs">Watch reviews</Text>
                                         </a>
-                                    </Slide>
+                                    </Slide> */}
                                 </div> 
-                                */}
+                               
                             </div>
                         </main>
 
