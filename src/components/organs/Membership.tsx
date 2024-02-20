@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { useRef } from "react";
+import { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import avcb from "../../assets/luminar/AVCB_e_CLCB.jpg";
 import laudos from "../../assets/luminar/LAUDOS.jpg";
@@ -12,25 +11,36 @@ import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
 import { Button } from "../atoms/Button";
 import { List } from "../atoms/List";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import {X, ArrowCircleRight, ArrowCircleLeft} from "@phosphor-icons/react";
+import { X, ArrowCircleRight, ArrowCircleLeft } from "@phosphor-icons/react";
+
+interface CardType {
+  amount: string;
+  duration: string;
+  caption: string;
+  benefits: string[];
+}
+
+interface ModalHeaderProps {
+  onClose: () => any;
+}
 
 const Membership = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState('');
-  const [selectedCard, setSelectedCard] = useState(null);
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  const [selectedImage, setSelectedImage] = useState<string>('');
+  const [selectedCard, setSelectedCard] = useState<CardType | null>(null);
   const navigate = useNavigate();
-  const sliderRef = useRef<Slider | null>();
+  const sliderRef = useRef<Slider | null>(null);
 
-  const openModal = (index) => {
+  const openModal = (index: number) => {
     setSelectedImage(
       index === 0 ? avcb :
-      index === 1 ? laudos :
-      index === 2 ? projetos :
-      index === 3 ? obras_manutencao :
-      index === 4 ? servicos_eletricos : ''
+        index === 1 ? laudos :
+          index === 2 ? projetos :
+            index === 3 ? obras_manutencao :
+              index === 4 ? servicos_eletricos : ''
     );
     setSelectedCard(MembershipPlans.cards[index]);
     setModalOpen(true);
@@ -42,7 +52,7 @@ const Membership = () => {
     setSelectedCard(null);
   };
 
-  const CustomModalHeader = ({ onClose }) => (
+  const CustomModalHeader = ({ onClose }: ModalHeaderProps) => (
     <div className="flex items-center justify-between">
       <DialogTitle className='text-center'>{selectedCard?.amount}</DialogTitle>
       <Button onClick={onClose} type="button" className="w-8 h-8 border rounded-full border-amber-500 flex items-center justify-center text-amber-500 hover:text-red-500 hover:border-red-500">
@@ -51,18 +61,16 @@ const Membership = () => {
     </div>
   );
 
-  // const handleNavigateToNovaPagina = () => {
-  //   console.log("selectedCard:", selectedCard);
-  
-  //   if (selectedCard && selectedCard.amount) {
-  //     const categoria = selectedCard.amount.toLowerCase();
-  //     console.log("selectedCard.categoria:", categoria);
-  //     navigate(`/nova-pagina/${categoria}`);
-  //     closeModal();
-  //   } else {
-  //     console.error("Categoria não definida no card selecionado.");
-  //   }
-  // };
+/*   const handleNavigateToNovaPagina = () => {
+    if (selectedCard && selectedCard.amount) {
+      const categoria = selectedCard.amount.toLowerCase();
+      navigate(`/nova-pagina/${categoria}`).then(() => {
+        closeModal();
+      });
+    } else {
+      console.error("Categoria não definida no card selecionado.");
+    }
+  }; */
 
   const handleNavigateToNovaPagina = () => {
     console.log("selectedCard:", selectedCard);
@@ -71,15 +79,12 @@ const Membership = () => {
       const categoria = selectedCard.amount.toLowerCase();
       console.log("selectedCard.categoria:", categoria);
   
-      // Aguarda a conclusão da navegação antes de fechar o modal
-      navigate(`/nova-pagina/${categoria}`).then(() => {
-        closeModal();
-      });
+      navigate(`/nova-pagina/${categoria}`);
+      closeModal();
     } else {
       console.error("Categoria não definida no card selecionado.");
     }
   };
-  
 
   // Configurações do CAROUSEL para CARDS
   const settings = {
@@ -179,19 +184,17 @@ const Membership = () => {
         <CustomModalHeader onClose={closeModal} />
         <DialogContent>
           <img src={selectedImage} alt="Selected" className="w-full h-auto" />
-          <DialogContentText>{selectedCard?.benefits}</DialogContentText>
+          <DialogContentText>{selectedCard?.benefits.join(', ')}</DialogContentText>
         </DialogContent>
         <DialogActions>
-        {/* <Link to={`/nova-pagina/${selectedCard?.categoria}`}>
-        </Link> */}
-        <Button
-          className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500"
-          style={{ borderRadius: '30px' }}
-          onClick={handleNavigateToNovaPagina}
-          color="primary"
+          <Button
+            className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500"
+            style={{ borderRadius: '30px' }}
+            onClick={handleNavigateToNovaPagina}
+            color="primary"
           >
-          Ir para Nova Página
-        </Button>
+            Ir para Nova Página
+          </Button>
         </DialogActions>
       </Dialog>
     </section>

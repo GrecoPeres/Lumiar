@@ -2,7 +2,7 @@ import { Text } from "../atoms/Text";
 import { WhatsappLogo, Envelope, MapPin } from "@phosphor-icons/react";
 import { Button } from "../atoms/Button";
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import emailjs from 'emailjs-com'; // Importe o emailjs-com
+//import emailjs from 'emailjs-com'; // Importe o emailjs-com
 
 const Contact = () => {
     const mapContainerStyle = {
@@ -26,7 +26,7 @@ const Contact = () => {
     //     email: email,
     // }
 
-    const sendEmail = (e) => {
+/*     const sendEmail = (e) => {
         e.preventDefault();
         // Use o emailjs para enviar o e-mail
         emailjs.sendForm('service_93mpno4', 'template_0zkb67c', e.target, '42ObO14COs0busbo-', )
@@ -36,7 +36,7 @@ const Contact = () => {
                 console.log(error.text);
             });
         e.target.reset();
-    };
+    }; */
 
     return (
         <section className="w-full h-auto flex items-center bg-zinc-900">
@@ -85,7 +85,7 @@ const Contact = () => {
                                 <Envelope size={16} className="inline-block mr-2" /> lumiar.orcamento@gmail.com
                             </Text>
                         </div>
-                        <form onSubmit={sendEmail}> {/* Adicione o evento onSubmit para chamar a função sendEmail */}
+                        <form> {/* Adicione o evento onSubmit para chamar a função sendEmail */}
                             <div className="mb-4">
                                 <input type="text" placeholder="Nome" className="w-full p-2 border rounded" name="name" />
                             </div>

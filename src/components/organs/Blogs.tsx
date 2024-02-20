@@ -7,7 +7,7 @@ import Image2 from "../../assets/luminar/2.jpeg";
 import Image3 from "../../assets/luminar/3.jpeg";
 import { Image } from "../atoms/Image";
 import { Link } from "react-router-dom";
-import { ChatsCircle, Clock } from "@phosphor-icons/react";
+//import { ChatsCircle, Clock } from "@phosphor-icons/react";
 import { Button } from "../atoms/Button";
 // import BlogModal from './BlogModal'; // modal
 // import { ChatsCircle, Clock } from "@phosphor-icons/react";
