@@ -5,23 +5,23 @@ export const NavLinks = [
     },
     {
         name: "Quem somos",
-        url: "/about"
+        url: "/quem_somos"
     },
     {
         name: "Sobre nós",
-        url: "/schedule"
+        url: "/sobre"
     },
     {
         name: "FeedBacks",
-        url: "/gallery"
+        url: "/feedback"
     },
     {
         name: "Notícias",
-        url: "/news"
+        url: "/noticias"
     },
     {
         name: "Contato",
-        url: "/contact"
+        url: "/contato"
     },
 ];
 
@@ -187,23 +187,23 @@ export const FooterTexts = {
             },
             {
                 name: "Quem somos",
-                url: "/about"
+                url: "/quem_somos"
             },
             {
                 name: "Sobre nós",
-                url: "/schedule"
+                url: "/sobre"
             },
             {
                 name: "Feedbacks",
-                url: "/gallery"
+                url: "/feedback"
             },
             {
                 name: "Notícias",
-                url: "/news"
+                url: "/noticias"
             },
             {
                 name: "Contato",
-                url: "/contact"
+                url: "/contato"
             },
         ]
     },

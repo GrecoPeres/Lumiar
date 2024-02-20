@@ -9,6 +9,11 @@ import NavBar from "./components/organs/NavBar"
 import Home from "./components/pages/Home";
 import NovaPagina from "./components/pages/NovaPagina";
 import Footer from "./components/organs/Footer";
+import About from "./components/organs/About";
+import Offers from "./components/organs/Offers";
+import Testimonials from "./components/organs/Testimonials";
+import Blogs from "./components/organs/Blogs";
+import Contact from "./components/organs/Contact";
 
 
 
@@ -26,7 +31,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/nova-pagina" element={<NovaPagina />} /> */}
+        <Route path="/quem_somos" element={<About />} />
+        <Route path="sobre" element={<Offers />} />
+        <Route path="/feedback" element={<Testimonials />} />
+        <Route path="/noticias" element={<Blogs />} />
+        <Route path="/contato" element={<Contact />} />
         <Route path="/nova-pagina/:categoria" element={<NovaPagina />} />
       </Routes>
       <Footer />
