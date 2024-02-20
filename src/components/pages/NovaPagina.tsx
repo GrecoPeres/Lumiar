@@ -103,7 +103,7 @@ const NovaPagina = () => {
   const { titulo, descricao, conteudo, imagem, descricao2, conteudo2, imagem2, descricao3, conteudo3, imagem3, descricao4, conteudo4, imagem4 } = renderConteudo();
 
 // Função para renderizar uma seção para desktop
-const renderDesktopSection = (tituloSec, descricaoSec, conteudoSec, imagemSec, reverse = false) => {
+const renderDesktopSection = (tituloSec: string, descricaoSec: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined, conteudoSec: string, imagemSec: string | null, reverse = false) => {
   const orderClass = reverse ? 'md:order-2 order-1' : 'md:order-1 order-2';
   const flexDirectionClass = reverse ? 'md:flex-row-reverse' : 'md:flex-row';
 
@@ -131,7 +131,7 @@ const renderDesktopSection = (tituloSec, descricaoSec, conteudoSec, imagemSec, r
 };
 
 // Função para renderizar uma seção para dispositivos móveis
-const renderMobileSection = (tituloSec, descricaoSec, conteudoSec, imagemSec) => {
+const renderMobileSection = (tituloSec: string, descricaoSec: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined, conteudoSec: string, imagemSec: string | null) => {
   return (
     <section className="md:hidden w-full flex flex-col items-center gap-6">
       <div className="w-full pt-12 px-4 flex flex-col justify-center items-start gap-6">
