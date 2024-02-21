@@ -4,6 +4,7 @@ import Contact from "../organs/Contact"
 import HeroSection from "../organs/HeroSection"
 import Membership from "../organs/Membership"
 import Offers from "../organs/Offers"
+import Products from "../organs/Products"
 import Testimonials from "../organs/Testimonials"
 
 
@@ -14,6 +15,7 @@ const Home = () => {
             <About />
             <Offers />
             <Membership />
+            <Products />
             <Testimonials />
             <Blogs />
             <Contact />

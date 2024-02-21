@@ -186,6 +186,43 @@ export const BlogTexts = {
     ]
 }
 
+export const ProductTexts = {
+    firstText: "Conheça nossos produtos",
+    secondText: "Veja o que temos para oferecer!",
+    products: [
+      {
+        category: "Soluções",
+        name: "Extintores de Incêndio",
+        description: "Seguindo as normas vigentes, o uso do sistema de proteção por extintores de incêndio é obrigatório, onde cada local, devido a sua ocupação, deve possuir os extintores devidamente posicionados, carregados e instalados da forma correta, estando assim, aptos ao uso em caso de algum princípio de incêndio ou sinistro.",
+        detailedDescription: "Os tipos, prazo de recarga, manutenção e inspeção dos cilindros e do produto interno, são informações que devem estar visíveis e em dia, nas etiquetas instaladas nos próprios cilindros. É importante sempre estar com os extintores em dia e devidamente carregados.",
+      },
+      {
+        category: "Soluções",
+        name: "Iluminação de emergência",
+        description: "A iluminação de emergência deve permitir o clareamento das rotas de fuga no momento do abandono da edificação, bem como, possibilitar o controle visual das áreas abandonadas para localizar pessoas impedidas de locomover-se. ",
+        detailedDescription: "Deve ser corretamente projetada, a fim de atingir os objetivos propostos, bem como ser executada seguindo as normativas previstas na IT 18/2019 e NBR 10.898. A Lumiar Soluções conta com equipe qualificada para o desenvolvimento de projeto e instalação e manutenção da iluminação de emergência na sua edificação. Para saber mais, entre em contato conosco através dos links abaixo.",
+      },
+      {
+        category: "Soluções",
+        name: "Sinalização de emergência",
+        description: "Conforme a NBR 13.434, a sinalização de segurança contra incêndio e pânico tem como objetivo reduzir o risco de ocorrência de incêndio, alertando para os riscos existentes e garantir que sejam adotadas ações adequadas à situação de risco, que orientem as ações de combate e facilitem a localização dos equipamentos e das rotas de saída para abandono seguro da edificação em caso de incêndio.",
+        detailedDescription: "A Lumiar Soluções conta com equipe qualificada para o desenvolvimento de projeto e instalação e manutenção da sinalização de emergência na sua edificação. Para saber mais entre em contato conosco através dos links abaixo.",
+      },
+      {
+        category: "Serviços",
+        name: "Brigada de Incêndio",
+        description: "A brigada de incêndio atua em edificações e áreas de risco, na prevenção e no combate ao princípio de incêndio, abandono de área e primeiros socorros, visando, em caso de sinistro, proteger a vida e o patrimônio, reduzir os danos ao meio ambiente, até a chegada do socorro especializado.",
+        detailedDescription: "A Lumiar Soluções possui profissionais especialistas, que vão te auxiliar na composição, formação e implantação da Brigada de incêndio. Se precisa de treinamento ou atualização da Brigada de incêndio do seu estabelecimento/edificação, entre em contato conosco.",
+      },
+      {
+        category: "Soluções",
+        name: "Portas corta fogo",
+        description: "As portas corta fogo possibilitam a saída segura das pessoas de uma edificação em casos de emergência e incêndio, pois retardam a passagem do fogo e da fumaça entre os andares ou ambientes de uma edificação.",
+        detailedDescription: "A Lumiar Soluções realiza a instalação e manutenção de portas corta fogo, atendendo todas as exigências da Norma ABNT 11.742. As Portas Corta Fogo são confeccionadas em chapa galvanizada podendo receber pintura eletrostática.",
+      },
+    ],
+}
+
 export const FooterTexts = {
     underLogoText: "Somos mais do que uma empresa de segurança contra incêndios; somos uma família comprometida e apaixonada em oferecer suporte para proteger vidas e patrimônios. Nossa missão é criar um ambiente positivo e capacitador que o motive a enfrentar desafios, adotar medidas de prevenção contra incêndios e descobrir a melhor maneira de proteger o que é mais importante.",
     quickLinks: {
