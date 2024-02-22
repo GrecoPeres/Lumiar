@@ -264,7 +264,7 @@ export const FooterTexts = {
                 name: "orcamentos@lumiarsolucoes.com.br",
             },
             {
-                name: "+55 (17) 1799162-7172",
+                name: "+55 (16) 97404-5100",
             }
         ]
     },

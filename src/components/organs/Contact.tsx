@@ -79,7 +79,7 @@ const Contact = () => {
                     <div className="w-1/2 pl-4">
                         <div className="mt-4">
                             <Text as="p" className="text-zinc-300 text-sm">
-                                <WhatsappLogo size={16} className="inline-block mr-2" /> (17)1799162-7172
+                                <WhatsappLogo size={16} className="inline-block mr-2" /> (16)97404-5100
                             </Text>
                             <Text as="p" className="text-zinc-300 text-sm">
                                 <Envelope size={16} className="inline-block mr-2" /> orcamentos@lumiarsolucoes.com.br

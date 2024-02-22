@@ -16,7 +16,7 @@ const StickyIcons = () => {
                 <InstagramLogo size={15} color="currentColor" weight="fill" />
             </a> */}
             <div className="whats">
-                <a href="https://wa.me/+5517991627172" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/+5516974045100" target="_blank" rel="noopener noreferrer">
                     <WhatsappLogo size={35} color="white" weight="fill" />
                 </a>
             </div>
