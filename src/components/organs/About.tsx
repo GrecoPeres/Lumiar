@@ -1,8 +1,11 @@
 import { Fade } from "react-awesome-reveal";
 import Image1 from "../../assets/luminar/1.jpeg";
 import Image2 from "../../assets/luminar/2.jpeg";
-import Image3 from "../../assets/luminar/3.jpeg";
+import Image3 from "../../assets/luminar/bomber-11.jpg";
 import Image4 from "../../assets/luminar/4.jpeg";
+
+import Image5 from "../../assets/luminar/foto_bomber.jpg"
+import Image6 from "../../assets/luminar/foto_bomber2.jpg"
 import { Image } from "../atoms/Image";
 import { Text } from "../atoms/Text";
 import { AboutTexts } from "../particles/Data";
@@ -23,8 +26,8 @@ const About = () => {
                     </Fade>
                 </div>
                 <div className="w-full md:h-[400px] h-[300px] md:order-2 order-1 grid grid-cols-3 grid-rows-3">
-                    <Image alt="Welcome Image" objectCover="object-cover" className="col-span-3 row-span-2 w-full h-full" image={Image1} />
-                    <Image alt="Welcome Image" objectCover="object-cover" className="w-full h-full" image={Image2} />
+                    <Image alt="Welcome Image" objectCover="object-cover" className="col-span-3 row-span-2 w-full h-full" image={Image5} />
+                    <Image alt="Welcome Image" objectCover="object-cover" className="w-full h-full" image={Image6} />
                     <Image alt="Welcome Image" objectCover="object-cover" className="w-full h-full border border-amber-500" image={Image3} />
                     <Image alt="Welcome Image" objectCover="object-cover" className="w-full h-full" image={Image4} />
                 </div>

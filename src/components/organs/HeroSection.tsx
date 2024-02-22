@@ -3,7 +3,7 @@ import { Image } from "../atoms/Image"
 import avcb from "../../assets/luminar/AVCB_e_CLCB.jpg";
 import laudos from "../../assets/luminar/LAUDOS.jpg";
 import projetos from "../../assets/luminar/PROJETOS.jpg";
-import obras_manutencao from "../../assets/luminar/OBRAS_MANUTENCOES.jpg";
+import obras_manutencao from "../../assets/luminar/lumiar-IA.jpeg";
 import servicos_eletricos from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
 import { HeroTexts } from "../particles/Data";
 import Slider from "react-slick";

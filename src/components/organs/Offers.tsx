@@ -1,5 +1,5 @@
 import { Image } from "../atoms/Image"
-import Offer from "../../assets/luminar/1.jpeg"
+import Offer from "../../assets/luminar/lumiar-IA.jpeg"
 import { Text } from "../atoms/Text"
 import { OfferTexts } from "../particles/Data"
 import { List } from "../atoms/List"

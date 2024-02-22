@@ -12,6 +12,10 @@ export const NavLinks = [
         url: "/sobre"
     },
     {
+        name: "Produtos",
+        url: "/produtos"
+    },
+    {
         name: "FeedBacks",
         url: "/feedback"
     },
@@ -239,6 +243,10 @@ export const FooterTexts = {
             {
                 name: "Sobre nós",
                 url: "/sobre"
+            },
+            {
+                name: "Produtos",
+                url: "/produtos"
             },
             {
                 name: "Feedbacks",

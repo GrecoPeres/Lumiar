@@ -14,6 +14,7 @@ import Offers from "./components/organs/Offers";
 import Testimonials from "./components/organs/Testimonials";
 import Blogs from "./components/organs/Blogs";
 import Contact from "./components/organs/Contact";
+import Products from "./components/organs/Products";
 
 
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/quem_somos" element={<About />} />
         <Route path="sobre" element={<Offers />} />
+        <Route path="/produtos" element={<Products />} />
         <Route path="/feedback" element={<Testimonials />} />
         <Route path="/noticias" element={<Blogs />} />
         <Route path="/contato" element={<Contact />} />

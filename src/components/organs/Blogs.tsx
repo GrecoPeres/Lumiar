@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
 import { BlogTexts } from "../particles/Data";
-import Image1 from "../../assets/luminar/1.jpeg";
+import Image1 from "../../assets/luminar/bomber-6.jpeg";
 import Image2 from "../../assets/luminar/2.jpeg";
 import Image3 from "../../assets/luminar/3.jpeg";
 import { Image } from "../atoms/Image";

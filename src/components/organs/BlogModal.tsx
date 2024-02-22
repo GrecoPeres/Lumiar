@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from "../atoms/Image";
 import { BlogTexts } from "../particles/Data";
-import Image1 from "../../assets/luminar/1.jpeg";
+import Image1 from "../../assets/luminar/bomber-8.jpeg";
 import Image2 from "../../assets/luminar/2.jpeg";
 import Image3 from "../../assets/luminar/3.jpeg";
 
