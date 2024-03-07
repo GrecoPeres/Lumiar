@@ -6,6 +6,7 @@ import { List } from "../atoms/List"
 import { useCallback } from "react"
 import { AlignBottom , Eye, Briefcase } from "@phosphor-icons/react"
 import { Fade } from "react-awesome-reveal"
+import StickyIcons from "../molecules/StickyIcons"
 
 
 const Offers = () => {
@@ -27,7 +28,7 @@ const Offers = () => {
         <section className="w-full h-auto flex items-center bg-zinc-900">
             <main className="w-full lg:h-[800px] grid md:grid-cols-2 items-center gap-10 md:gap-0 lg:gap-0 ">
                 <div className="w-full md:h-[800px] h-[300px] grid">
-                    <Image alt="Offer Image" objectCover="object-cover" className="w-full h-full" image={Offer} />
+                    <Image alt="Offer Image" objectCover="object-cover" className="md:h-[800px] h-[300px]" image={Offer} />
                 </div>
                 <div className="h-full w-full lg:px-10 px-4 flex flex-col lg:justify-center md:justify-end justify-center items-start md:gap-20 lg:gap-24 gap-16">
                     <Fade className="w-full">
@@ -52,7 +53,7 @@ const Offers = () => {
                     </Fade>
                 </div>
             </main>
-
+            <StickyIcons />
         </section>
     )
 }

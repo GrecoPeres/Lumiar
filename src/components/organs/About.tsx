@@ -3,7 +3,7 @@ import Image1 from "../../assets/luminar/1.jpeg";
 import Image2 from "../../assets/luminar/2.jpeg";
 import Image3 from "../../assets/luminar/bomber-11.jpg";
 import Image4 from "../../assets/luminar/4.jpeg";
-
+import StickyIcons from "../molecules/StickyIcons";
 import Image5 from "../../assets/luminar/foto_bomber.jpg"
 import Image6 from "../../assets/luminar/foto_bomber2.jpg"
 import { Image } from "../atoms/Image";
@@ -20,7 +20,7 @@ const About = () => {
                             <Text as="p" className="text-amber-500 lg:text-sm text-xs tracking-widest uppercase font-medium">{AboutTexts.firstText}</Text>
                             <Text as="h1" className="text-zinc-100 lg:text-5xl md:text-4xl text-3xl">{AboutTexts.secondText}</Text>
                             {/* <Text as="h1" className="absolute text-zinc-500/20 md:-left-3 left-0 lg:text-9xl md:text-7xl text-6xl font-extrabold lg:-top-36 md:-top-20 -top-16 -z-10">01</Text> */}
-                            Fade</div>
+                            </div>
                         <Text as="h2" className="text-zinc-200 mt-10 mb-4 text-lg">{AboutTexts.caption}</Text>
                         <Text as="p" className="text-zinc-400 text-justify text-base">{AboutTexts.paragraph1}</Text>
                     </Fade>
@@ -32,7 +32,7 @@ const About = () => {
                     <Image alt="Welcome Image" objectCover="object-cover" className="w-full h-full" image={Image4} />
                 </div>
             </main>
-
+            <StickyIcons />
         </section>
     )
 }

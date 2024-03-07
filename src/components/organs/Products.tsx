@@ -49,7 +49,7 @@ const Products = () => {
         <main className="w-full lg:h-[1250px] md:h-[1000px] flex flex-col justify-center items-center gap-20 lg:gap-28 py-12 md:py-0">
             <div className="flex flex-col mt-10 items-center relative before:absolute before:-bottom-6 before:left-30 before:w-20 before:h-1 before:rounded-lg before:bg-gradient-to-r before:from-amber-500 before:to-red-500 z-10">
                 <Text as="p" className="text-amber-500 lg:text-sm text-xs tracking-widest uppercase font-medium">{ProductTexts.firstText}</Text>
-                <Text as="h1" className="text-zinc-100 lg:text-5xl md:text-4xl text-3xl">{ProductTexts.secondText}</Text>
+                <Text as="h1" className="text-zinc-100 lg:text-5xl md:text-4xl text-3xl text-center">{ProductTexts.secondText}</Text>
                 <Text as="h1" className="absolute text-zinc-500/20 lg:left-24 left-20 lg:text-9xl md:text-7xl text-6xl font-extrabold lg:-top-32 md:-top-20 -top-16 -z-10"></Text>
             </div>
 
@@ -62,8 +62,7 @@ const Products = () => {
 
                 {/* Informações do produto */}
                 <Link to="/" className="flex flex-col lg:p-6 md:p-4 p-6 gap-2 group">
-                    <Text as="h3" className="text-amber-500 text-xs group-hover:underline font-semibold uppercase">{product.category}</Text>
-                    <Text as="h1" className="text-zinc-300 text-base capitalize">{product.name}</Text>
+                    <Text as="h3" className="text-amber-500 text-xs group-hover:underline font-semibold uppercase">{product.name}</Text>
                     <Text as="p" className="text-zinc-400 text-sm">{product.description}</Text>
                 </Link>
 

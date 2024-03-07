@@ -137,17 +137,17 @@ export const TestimonialTexts = {
     feedBacks: [
         {
             text: "Contratamos a equipe de proteção contra incêndio para desenvolver um projeto de segurança em nossa empresa, e ficamos extremamente satisfeitos com os resultados.",
-            person: "João Silva",
+            person: "João Victor",
             type: "Cliente"
         },
         {
             text: "A empresa de proteção contra incêndio demonstrou um profundo conhecimento em prevenção e segurança contra incêndio. ",
-            person: "Carlos Pereira",
+            person: "Carlos Perreira",
             type: "Cliente"
         },
         {
             text: "Os especialistas em proteção contra incêndio não apenas nos forneceram soluções eficazes, mas também nos educaram sobre a importância da prevenção.",
-            person: "Collins Thompson",
+            person: "Pedro Gomes",
             type: "Cliente"
         }
     ],
@@ -265,15 +265,25 @@ export const FooterTexts = {
     contacts: {
         caption: "Contato",
         names: [
-            {
-                name: "Rua Cavalheiro Torquato Rizzi, 1600, Ribeirão Preto, 14020-348, SP",
-            },
-            {
-                name: "orcamentos@lumiarsolucoes.com.br",
-            },
-            {
-                name: "+55 (16) 97404-5100",
-            }
+          {
+            name: "Rua José Antônio Ferrari, 313, Jardim Santa Cruz - Taquaritinga / SP, 15906-282",
+            emails: [],
+            phones: []
+          },
+          {
+            name: "engenharia@lumiarsolucoes.com.br",
+            emails: [
+              "orcamentos@lumiarsolucoes.com.br"
+            ],
+            phones: []
+          },
+          {
+            emails: [],
+            phones: [
+                "+55 (16) 97404-5100",
+                "+55 (17) 99162-7172"
+            ]
+          }
         ]
     },
     copyright: "Copyright 2024. Todos os direitos reservados"

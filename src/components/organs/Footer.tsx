@@ -52,14 +52,26 @@ const Footer = () => {
                 <div className="flex flex-col md:mt-8 gap-6">
                     <Text as="h1" className="text-zinc-300 text-2xl font-bold">{FooterTexts.contacts.caption}</Text>
                     <ul className="flex flex-col gap-4">
-                        {
-                            FooterTexts.contacts.names.map((name, index) => (
-                                <List className="text-zinc-400 flex items-start gap-2" key={index}>
-                                    <Text as="span" className="text-amber-500 mt-1">{renderIcon(index)}</Text>
-                                    <Text as="span" className="">{name.name}</Text>
+                        {FooterTexts.contacts.names.map((contact, index) => (
+                        <div key={index}>
+                            <List className="text-zinc-400 flex items-start gap-2">
+                            <Text as="span" className="text-amber-500 mt-1">{renderIcon(index)}</Text>
+                            <div>
+                                <Text as="span" className={""}>{contact.name}</Text>
+                                {contact.emails.map((email, emailIndex) => (
+                                <List key={emailIndex}>
+                                    <a href={`mailto:${email}`} className="hover:text-red-500 transition-all duration-200">{email}</a>
                                 </List>
-                            ))
-                        }
+                                ))}
+                                {contact.phones.map((phone, phoneIndex) => (
+                                <List key={phoneIndex}>
+                                    <a href={`tel:${phone}`} className="hover:text-red-500 transition-all duration-200">{phone}</a>
+                                </List>
+                                ))}
+                            </div>
+                            </List>
+                        </div>
+                        ))}
                     </ul>
                 </div>
             </main>

@@ -19,6 +19,7 @@ import Servicos_DIMENSIONAMENTOS from "../../assets/luminar/DIMENSIONAMENTOS.png
 import Servicos_ELETRICOS from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
 import { Fade } from "react-awesome-reveal";
 import { useParams } from 'react-router-dom';
+import StickyIcons from "../molecules/StickyIcons";
 
 const NovaPagina = () => {
   const { categoria } = useParams();
@@ -126,6 +127,7 @@ const renderDesktopSection = (tituloSec: string, descricaoSec: string | number |
           </div>
         )}
       </div>
+      <StickyIcons />
     </section>
   );
 };
@@ -151,6 +153,7 @@ const renderMobileSection = (tituloSec: string, descricaoSec: string | number | 
           </div>
         )}
       </div>
+      <StickyIcons />
     </section>
   );
 };
