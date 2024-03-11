@@ -20,16 +20,16 @@ const NavBar = () => {
     }
 
     const listenScrollEvent = () => {
-        window.scrollY > 10 ? setNavBarColor(true) : setNavBarColor(true);
+        setNavBarColor(true);
     };
-
+    
     useEffect(() => {
+        setNavBarColor(true);
         window.addEventListener("scroll", listenScrollEvent);
         return () => {
             window.removeEventListener("scroll", listenScrollEvent);
         };
     }, []);
-
 
     return (
         <header className="w-full h-auto bg-transparent overflow-x-hidden fixed z-50 top-0 left-0">
