@@ -12,6 +12,10 @@ export const NavLinks = [
         url: "/sobre"
     },
     {
+        name: "Serviços",
+        url: "/servicos"
+    },
+    {
         name: "Produtos",
         url: "/produtos"
     },

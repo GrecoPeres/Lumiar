@@ -15,6 +15,7 @@ import Testimonials from "./components/organs/Testimonials";
 import Blogs from "./components/organs/Blogs";
 import Contact from "./components/organs/Contact";
 import Products from "./components/organs/Products";
+import Membership from "./components/organs/Membership";
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/quem_somos" element={<About />} />
         <Route path="sobre" element={<Offers />} />
+        <Route path="/servicos" element={<Membership />} />
         <Route path="/produtos" element={<Products />} />
         <Route path="/feedback" element={<Testimonials />} />
         <Route path="/noticias" element={<Blogs />} />
