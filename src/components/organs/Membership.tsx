@@ -15,6 +15,7 @@ import { useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { X, ArrowCircleRight, ArrowCircleLeft } from "@phosphor-icons/react";
+import StickyIcons from '../molecules/StickyIcons';
 
 interface CardType {
   amount: string;
@@ -123,6 +124,7 @@ const Membership = () => {
           </Button>
         </div>
       </main>
+      <StickyIcons />
     </section>
   );
 };
