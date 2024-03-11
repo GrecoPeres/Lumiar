@@ -1,12 +1,9 @@
 import { Text } from "../atoms/Text"
 import { TestimonialTexts } from "../particles/Data";
-import client1 from "../../assets/luminar/bomber-7.jpeg"
-import client2 from "../../assets/luminar/bomber-10_min.jpeg"
-import client3 from "../../assets/luminar/bomber-11_min.jpg"
-import { useCallback } from "react";
+
 import Slider from "react-slick";
 import { Card } from "../molecules/Card";
-import { Image } from "../atoms/Image";
+
 import { Star, StarHalf } from "@phosphor-icons/react";
 
 
@@ -56,7 +53,7 @@ const Testimonials = () => {
         ],
     };
 
-    const renderClients = useCallback((element: number) => {
+/*     const renderClients = useCallback((element: number) => {
         switch (element) {
             case 0:
                 return client1;
@@ -67,7 +64,7 @@ const Testimonials = () => {
             default:
                 return "";
         }
-    }, [])
+    }, []) */
     return (
         <section className="w-full h-auto flex items-center bg-zinc-950">
             <main className="w-full lg:h-[700px] md:h-[600px] flex flex-col justify-center items-center gap-10 md:gap-10 py-12 md:py-0">
@@ -84,7 +81,7 @@ const Testimonials = () => {
                         {
                             TestimonialTexts.feedBacks.map((feedback, index) => (
                                 <div key={index} className="lg:px-6 md:px-4 w-full px-3">
-                                    <Card className="bg-zinc-800 w-full h-[250px] grid grid-cols-3 border-[0.01rem] border-amber-500/30">
+                                    <Card className="bg-zinc-800 w-full h-[250px] border-[0.01rem] border-amber-500/30">
                                         <div className="flex flex-col justify-center md:justify-start gap-1 col-span-2 lg:p-8 p-4">
                                             <Text as="h2" className="md:text-xl text-lg font-semibold text-zinc-300">{feedback.person}</Text>
                                             <Text as="h6" className="text-red-500 text-sm uppercase">{feedback.type}</Text>
@@ -98,7 +95,7 @@ const Testimonials = () => {
                                                 <StarHalf size={12} color="currentColor" weight="fill" />
                                             </div>
                                         </div>
-                                        <Image className="" objectCover="object-cover" image={renderClients(index)} alt={feedback.person} />
+                                        {/* <Image className="" objectCover="object-cover" image={renderClients(index)} alt={feedback.person} /> */}
                                     </Card>
                                 </div>
 
