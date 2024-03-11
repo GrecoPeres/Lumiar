@@ -93,33 +93,38 @@ export const MembershipPlans = {
     cards: [
         {
             amount: "AVCB e CLCB",
+            category: "avcb-clcb",
             duration: "",
             caption: "",
-            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
+            benefits: ["CLCB e AVCB são cruciais para segurança contra incêndios. CLCB: locais menores, AVCB: espaços maiores e com risco elevado. Ambos requerem medidas de segurança. Mantenha documentos atualizados para proteger pessoas e propriedades. Entre em contato para mais informações."]
         },
         {
             amount: "LAUDOS",
+            category: "laudos",
             duration: "",
             caption: "",
-            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
+            benefits: ["Os laudos garantem a segurança das instalações em uma edificação. O de Estanqueidade assegura o sistema de gás, o de SPCI avalia medidas contra incêndios, o Populacional verifica a evacuação, e o Elétrico atesta a segurança elétrica. Essenciais para a conformidade com normas e segurança dos ocupantes."]
         },
         {
             amount: "PROJETOS",
-            duration: "",
+            duration: "projetos",
+            category: "projetos",
             caption: "",
-            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
+            benefits: ["Projetos de Proteção e Combate a Incêndio (PPCI) são obrigatórios para edificações acima de 750 m². Acima de 1500 m², aprovação do Corpo de Bombeiros necessária. Implementam-se medidas após aprovação. Atualização em caso de alteração na área. Para garantir conformidade e segurança."]
         },
         {
             amount: "OBRAS E MANUTENÇÕES",
+            category: "obras_manutencao",
             duration: "",
             caption: "",
-            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
+            benefits: ["Sistema de alarme e detecção obrigatório para edificações acima de 750m² ou com alto risco. Inclui central de alarme, sirenes, acionadores e detectores de fumaça e temperatura. Sistema de combate inclui hidrantes, extintores e sprinklers. Instalação da bomba de incêndio requer projeto e cálculo volumétrico."]
         },
         {
             amount: "SERVIÇOS ELÉTRICOS",
+            category: "servicos_eletricos",
             duration: "",
             caption: "",
-            benefits: ["Definir texto geral daquela categoria, onde irá preencher essa área aqui..."]
+            benefits: ["Atualize seus dados na CPFL ao mudar de morador para acesso às informações da instalação. Alterações de carga garantem potência adequada e segurança. Nossa equipe oferece dimensionamento elétrico para construções, assegurando estabilidade e segurança. O projeto elétrico prévio reduz custos e aumenta a segurança."]
         }
     ]
 }

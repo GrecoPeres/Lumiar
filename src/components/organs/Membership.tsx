@@ -20,70 +20,16 @@ interface CardType {
   amount: string;
   duration: string;
   caption: string;
+  category: string;
   benefits: string[];
 }
 
-interface ModalHeaderProps {
-  onClose: () => any;
-}
-
 const Membership = () => {
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [selectedImage, setSelectedImage] = useState<string>('');
-  const [selectedCard, setSelectedCard] = useState<CardType | null>(null);
   const navigate = useNavigate();
   const sliderRef = useRef<Slider | null>(null);
 
-  const openModal = (index: number) => {
-    setSelectedImage(
-      index === 0 ? avcb :
-        index === 1 ? laudos :
-          index === 2 ? projetos :
-            index === 3 ? obras_manutencao :
-              index === 4 ? servicos_eletricos : ''
-    );
-    setSelectedCard(MembershipPlans.cards[index]);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-    setSelectedImage('');
-    setSelectedCard(null);
-  };
-
-  const CustomModalHeader = ({ onClose }: ModalHeaderProps) => (
-    <div className="flex items-center justify-between">
-      <DialogTitle className='text-center'>{selectedCard?.amount}</DialogTitle>
-      <Button onClick={onClose} type="button" className="w-8 h-8 border rounded-full border-amber-500 flex items-center justify-center text-amber-500 hover:text-red-500 hover:border-red-500">
-        <X size={20} color="currentColor" weight="light" />
-      </Button>
-    </div>
-  );
-
-/*   const handleNavigateToNovaPagina = () => {
-    if (selectedCard && selectedCard.amount) {
-      const categoria = selectedCard.amount.toLowerCase();
-      navigate(`/nova-pagina/${categoria}`).then(() => {
-        closeModal();
-      });
-    } else {
-      console.error("Categoria não definida no card selecionado.");
-    }
-  }; */
-
-  const handleNavigateToNovaPagina = () => {
-    console.log("selectedCard:", selectedCard);
-  
-    if (selectedCard && selectedCard.amount) {
-      const categoria = selectedCard.amount.toLowerCase();
-      console.log("selectedCard.categoria:", categoria);
-  
-      navigate(`/nova-pagina/${categoria}`);
-      closeModal();
-    } else {
-      console.error("Categoria não definida no card selecionado.");
-    }
+  const handleNavigateToNovaPagina = (category: string) => {
+    navigate(`/nova-pagina/${category}`);
   };
 
   // Configurações do CAROUSEL para CARDS
@@ -129,7 +75,6 @@ const Membership = () => {
     }
   };
 
-
   return (
     <section className="w-full h-auto py-20 md:py-28 lg:py-40 bg-zinc-950 flex flex-col md:gap-28 gap-20 justify-center items-center">
       <div className="flex flex-col items-center relative before:absolute before:-bottom-6 before:left-30 before:w-36 before:h-1 before:rounded-lg before:bg-gradient-to-r before:from-amber-500 before:to-red-500 z-10">
@@ -161,7 +106,7 @@ const Membership = () => {
                 className="mt-4 mb-3 px-6 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500"
                 type="button"
                 style={{ borderRadius: '30px' }}
-                onClick={() => openModal(index)}
+                onClick={() => handleNavigateToNovaPagina(card.category)}
               >
                 Ver mais
               </Button>
@@ -178,25 +123,6 @@ const Membership = () => {
           </Button>
         </div>
       </main>
-
-      {/* Modal */}
-      <Dialog open={modalOpen} onClose={closeModal}>
-        <CustomModalHeader onClose={closeModal} />
-        <DialogContent>
-          <img src={selectedImage} alt="Selected" className="w-full h-auto" />
-          <DialogContentText>{selectedCard?.benefits.join(', ')}</DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button
-            className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500"
-            style={{ borderRadius: '30px' }}
-            onClick={handleNavigateToNovaPagina}
-            color="primary"
-          >
-            Ir para Nova Página
-          </Button>
-        </DialogActions>
-      </Dialog>
     </section>
   );
 };
