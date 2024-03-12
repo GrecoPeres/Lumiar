@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import Slider from 'react-slick';
 import avcb from "../../assets/luminar/AVCB_e_CLCB.jpg";
 import laudos from "../../assets/luminar/LAUDOS.jpg";
@@ -6,7 +6,6 @@ import projetos from "../../assets/luminar/PROJETOS.jpg";
 import obras_manutencao from "../../assets/luminar/OBRAS_MANUTENCOES.jpg";
 import servicos_eletricos from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
 import { MembershipPlans } from "../particles/Data";
-import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
 import { Button } from "../atoms/Button";
@@ -14,16 +13,8 @@ import { List } from "../atoms/List";
 import { useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { X, ArrowCircleRight, ArrowCircleLeft } from "@phosphor-icons/react";
+import { ArrowCircleRight, ArrowCircleLeft } from "@phosphor-icons/react";
 import StickyIcons from '../molecules/StickyIcons';
-
-interface CardType {
-  amount: string;
-  duration: string;
-  caption: string;
-  category: string;
-  benefits: string[];
-}
 
 const Membership = () => {
   const navigate = useNavigate();

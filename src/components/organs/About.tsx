@@ -1,6 +1,4 @@
 import { Fade } from "react-awesome-reveal";
-import Image1 from "../../assets/luminar/1.jpeg";
-import Image2 from "../../assets/luminar/2.jpeg";
 import Image3 from "../../assets/luminar/bomber-11_min.jpg";
 import Image4 from "../../assets/luminar/4.jpeg";
 import StickyIcons from "../molecules/StickyIcons";
