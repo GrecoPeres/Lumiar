@@ -110,3 +110,21 @@ input[type=number] {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to right, #f59e0b, #ef4444);
 }
+
+.badge-warning {
+    background-color: #fcefbd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.badge-success {
+    background-color: #D1FAE5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.badge-error {
+    background-color: #FECACA;
+    padding: 10px;
+    border-radius: 5px;
+}
