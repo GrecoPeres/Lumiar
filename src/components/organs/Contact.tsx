@@ -6,7 +6,7 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const [emailStatus, setEmailStatus] = useState(null);
+    const [emailStatus, setEmailStatus] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
     const mapContainerStyle = {
@@ -24,7 +24,7 @@ const Contact = () => {
         lng: Number('-47.800'),
     };
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: any) => {
         e.preventDefault();
 
         const { name, email, phone, message } = e.target;
