@@ -83,11 +83,11 @@ const HeroSection = () => {
                                 </Text>
                                 
                                 <div className="flex items-center gap-8">
-                                    {/* <Slide direction="up">
+                                    <Slide direction="up">
                                         <Button type="button" className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500">
                                             {hero.Button}
                                         </Button>
-                                    </Slide> */}
+                                    </Slide>
                                     {/* <Slide direction="up">
                                         <a href="/" className="flex items-center gap-2 text-red-500 hover:text-amber-500 group">
                                             <Text as="span" className="text-zinc-100 group-hover:text-amber-500 uppercase text-xs">Watch reviews</Text>
