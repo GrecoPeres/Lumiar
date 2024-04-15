@@ -1,13 +1,14 @@
 import React from "react";
 import { Image } from "../atoms/Image";
 import { Text } from "../atoms/Text";
-import AVCB_CLCB from "../../assets/luminar/AVCB_e_CLCB.jpg";
+import AVCB from "../../assets/luminar/avcb.jpg";
+import CLCB from "../../assets/luminar/clcb.jpg";
 // import Laudos_INCENDIO from "../../assets/luminar/LAUDO_COMBATE_INCENDIO.jpg";
 import Laudos_ELETRICO from "../../assets/luminar/LAUDO_ELÉTRICO.png";
 import Laudos_ESTANQUEIDADE from "../../assets/luminar/LAUDO_ESTANQUEIDADE.jpg";
 import Laudos_POPULACIONAL from "../../assets/luminar/LAUDO_POPULACIONAL.jpg";
-import Laudos_COMBATE from "../../assets/luminar/LAUDO_COMBATE_INCENDIO.jpg";
-// import Projeto_ELETRICO from "../../assets/luminar/PROJETO_ELETRICO.png";
+import Laudos_COMBATE from "../../assets/luminar/laudo-protecao-incendio.jpg";
+import Projeto_ELETRICO from "../../assets/luminar/PROJETO_ELETRICO.png";
 import Projeto_EMISSAO from "../../assets/luminar/EMISSAO_PROJETOS.jpg";
 import Projeto_ATUALIZACAO from "../../assets/luminar/ATUALIZACAO_PROJETOS.jpg";
 import Obras_ALARME from "../../assets/luminar/SISTEMA_DE_ALARME.png";
@@ -33,7 +34,7 @@ const NovaPagina = () => {
           conteudo: 'O Laudo de estanqueidade visa o teste da tubulação de gás, onde será atestada a conformidade de todo o sistema, assim como a central GLP, tubulação e materiais aplicados. O teste é feito mediante a presença do técnico especializado com equipamento específico e após a conclusão é gerado o laudo de conformidade quando atestado toda a conformidade das instalações.',
           imagem: Laudos_ESTANQUEIDADE,
           descricao2: 'LAUDO SISTEMA DE PROTEÇÃO E COMBATE A INCÊNDIOS - SPCI (ALARME, DETECÇÃO, DETECÇÃO)',
-          conteudo2: 'O laudo para SPCI se da para a completa análise das medidas de segurança contra incêndio instaladas na edificação, visando a correta aplicação, seguindo decretos e instruções técnicas vigentes, onde a partir de sua ocupação medidas de segurança específicas são aplicadas, a qual um técnico irá até a sua edificação verificar todas as medidas instaladas, caso haja alguma divergência das normas vigentes, adequações deverão ser feitas para a correta instalação de todo o sistema. Após constatada toda conformidade, um laudo é gerado apresentando toda conformidade da edificação e assinado por engenheiro responsável.',
+          conteudo2: 'O laudo para SPCI se dá pela análise completa das medidas de segurança contra incêndio instaladas na edificação, visando a correta aplicação das mesmas com base nos decretos e instruções técnicas vigentes. De acordo com o tipo de ocupação, medidas de segurança específicas são aplicadas e um técnico irá até a sua edificação verificar todas as medidas instaladas. Caso haja alguma divergência em relação as normas ou, se verificado alguma falha de funcionamento, será necessária a adequação dos pontos levantados. Após constatada toda conformidade do sistema, um laudo é gerado e assinado por engenheiro responsável.',
           imagem2: Laudos_COMBATE,
           descricao3: 'LAUDO POPULACIONAL',
           conteudo3: 'Laudo populacional é exigido para edificação onde a principal ocupação é reunião de público, sejam elas, bares, restaurantes, lanchonetes, salões, auditórios e qualquer outra ocupação que haja reunião de público. O laudo é necessário para comprovar a lotação máxima de pessoas na edificação e o tamanho das saídas de emergência obrigatórios para a quantidade máxima de pessoas no local, ou seja apresentar que a quantidade de público e as saídas de emergência, garantem a segurança de todos em caso de algum sinistro. Tornando possível assim a evacuação de todos em segurança.',
@@ -45,12 +46,12 @@ const NovaPagina = () => {
       case 'avcb-clcb':
         return {
           titulo: 'AVCB e CLCB',
-          descricao: 'CLCB',
-          conteudo: 'Certificado de licença do corpo de bombeiros (CLCB) é o documento obrigatório para edificações multifamiliares, comerciais e industriais que atuam com ocupação de baixo e médio risco de incêndio, com até 750 m² e até 6m de altura. Cada edificação possui medidas de segurança específicas que são determinadas pela sua ocupação e área total construída. Lembrando que manter o seu Certificado de licença do corpo de bombeiros em dia é obrigatório além das medidas de combate a incêndio, algo muito importante para manter a proteção do seu patrimônio e para todas as pessoas que frequentam seu ambiente. Entre em contato conosco para mais informações, seja para a primeira emissão, renovação do seu CLCB ou para sanar qualquer dúvida pertinente.',
-          imagem: AVCB_CLCB,
-          descricao2: 'AVCB',
-          conteudo2: 'Auto de vistoria do corpo de bombeiros (AVCB), é o documento obrigatório para edificações acima de 750 m², onde a ocupação apresenta um risco mais elevado para a edificação e para as pessoas que o frequentam. Cada edificação possui as medidas de segurança específicas, mas tradicionalmente, quando se trata de AVCB é obrigatório a instalação de central de alarme, sistema de hidrantes, sistema de iluminação de emergência, entre outros. Para tirar dúvidas sobre quais medidas a sua edificação necessita, entre em contato conosco. Contamos com uma equipe especializada para lhe atender.',
-          imagem2: AVCB_CLCB,
+          descricao: 'AVCB',
+          conteudo2: 'Auto de Vistoria do Corpo de Bombeiros (AVCB), é o documento obrigatório para edificações acima de 750 m², que apresentam um risco mais elevado para a própria construção e para as pessoas que a frequentam. Cada edificação possui medidas de segurança específicas. Tradicionalmente, quando se trata de AVCB é obrigatório a instalação do sistema de detecção e alarme, hidrantes, iluminação de emergência, entre outros. Para tirar dúvidas sobre quais medidas a sua edificação necessita, entre em contato conosco. Contamos com uma equipe especializada para lhe atender.',
+          imagem: AVCB,
+          descricao2: 'CLCB',
+          conteudo: 'Certificado de Licença do Corpo de Bombeiros (CLCB), é o documento obrigatório para edificações multifamiliares, comerciais e industriais que atuam como ocupação de baixo e médio risco de incêndio, com até 750 m² e até 6m de altura. Cada edificação possui medidas de segurança específicas que são determinadas pela sua ocupação e área total construída. Lembrando que, manter o seu Certificado de Licença do Corpo de Bombeiros e as medidas de proteção e combate a incêndio em dia é obrigatório, pois é muito importante para manter a proteção do seu patrimônio e a segurança de todas as pessoas que frequentam seu ambiente. Entre em contato conosco para mais informações, seja para a primeira emissão, renovação do seu CLCB ou para sanar qualquer dúvida pertinente.',
+          imagem2: CLCB,
         };
       case 'projetos':
         return {
@@ -58,9 +59,12 @@ const NovaPagina = () => {
           descricao: 'Elaborações de Projetos',
           conteudo: 'Caso sua edificação ultrapasse os 750 m² é obrigatório a emissão e aprovação de projeto de proteção de combate a incêndio (PPCI), onde a partir de 1500 m² o projeto precisa ser aprovado junto ao corpo de bombeiros, e somente após a aprovação, a execução das medidas de segurança contra incêndio vigente devem ser aplicadas.',
           imagem: Projeto_EMISSAO,
-          descricao2: 'Atualização de Projeto',
-          conteudo2: 'A atualização de projeto de proteção contra incêndio é necessária quando há uma ampliação ou alteração da área construída da edificação, onde esta alteração influencia diretamente as medidas de segurança contra incêndio exigidas para a edificação.',
-          imagem2: Projeto_ATUALIZACAO,
+          descricao2: 'PROJETO ELÉTRICO',
+          conteudo2: 'O projeto elétrico é importante para que, antes de se iniciar a execução das instalações, haja o conhecimento prévio de tudo que será instalado e o dimensionamento correto de todos os pontos. Por exemplo: onde estão as tomadas 220V e os disjuntores de cada cômodo? Quais as proteções e aterramentos que devem ser utilizados e qual a carga necessária para a edificação? Informações como essas, são trazidas claramente no projeto elétrico, o que permite o correto dimensionamento do sistema, facilitando a execução da obra, além de garantir maior segurança e redução de custos.',
+          imagem2: Projeto_ELETRICO,
+          descricao3: 'Atualização de Projeto',
+          conteudo3: 'A atualização de projeto de proteção contra incêndio é necessária quando há uma ampliação ou alteração da área construída da edificação, onde esta alteração influencia diretamente as medidas de segurança contra incêndio exigidas para a edificação.',
+          imagem3: Projeto_ATUALIZACAO,
         };
       case 'obras_manutencao':
         return {

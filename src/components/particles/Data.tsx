@@ -100,35 +100,35 @@ export const MembershipPlans = {
             category: "avcb-clcb",
             duration: "",
             caption: "",
-            benefits: ["CLCB e AVCB são cruciais para segurança contra incêndios. CLCB: locais menores, AVCB: espaços maiores e com risco elevado. Ambos requerem medidas de segurança. Mantenha documentos atualizados para proteger pessoas e propriedades. Entre em contato para mais informações."]
+            benefits: ["AVCB e CLCB são documentos obrigatórios para que a sua edificação esteja regularizada perante o Corpo de Bombeiros. Junto ao documento, vem as responsabilidades e a aplicação das medidas de segurança contra incêndio, as quais garantem a segurança da edificação e das pessoas. Clique em VER MAIS, para ter informações mais detalhadas e se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         },
         {
             amount: "LAUDOS",
             category: "laudos",
             duration: "",
             caption: "",
-            benefits: ["Os laudos garantem a segurança das instalações em uma edificação. O de Estanqueidade assegura o sistema de gás, o de SPCI avalia medidas contra incêndios, o Populacional verifica a evacuação, e o Elétrico atesta a segurança elétrica. Essenciais para a conformidade com normas e segurança dos ocupantes."]
+            benefits: ["Os laudos garantem que determinados sistemas estejam funcionando da forma correta, como é exigido pelas leis e normas técnicas vigentes. Clique em VER MAIS e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         },
         {
             amount: "PROJETOS",
             duration: "projetos",
             category: "projetos",
             caption: "",
-            benefits: ["Projetos de Proteção e Combate a Incêndio (PPCI) são obrigatórios para edificações acima de 750 m². Acima de 1500 m², aprovação do Corpo de Bombeiros necessária. Implementam-se medidas após aprovação. Atualização em caso de alteração na área. Para garantir conformidade e segurança."]
+            benefits: ["Os projetos são essenciais para o correto dimensionamento dos mais variados sistemas. Permitem o adequado uso dos materiais e a execução apropriada de uma obra, acarretando em maior economia para o cliente. Clique em VER MAIS e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         },
         {
             amount: "OBRAS E MANUTENÇÕES",
             category: "obras_manutencao",
             duration: "",
             caption: "",
-            benefits: ["Sistema de alarme e detecção obrigatório para edificações acima de 750m² ou com alto risco. Inclui central de alarme, sirenes, acionadores e detectores de fumaça e temperatura. Sistema de combate inclui hidrantes, extintores e sprinklers. Instalação da bomba de incêndio requer projeto e cálculo volumétrico."]
+            benefits: ["Existem vários sistemas que contribuem para a prevenção e combate a incêndio, sendo alguns deles e mais comuns, os sistemas de alarme e detecção, sistema de hidrantes e sprinklers e os extintores de incêndio, e todos precisam de manutenção ou serem instalados quando necessário. Para isso, temos uma equipe especializada para lhe atender. Clique em VER MAIS e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         },
         {
             amount: "SERVIÇOS ELÉTRICOS",
             category: "servicos_eletricos",
             duration: "",
             caption: "",
-            benefits: ["Atualize seus dados na CPFL ao mudar de morador para acesso às informações da instalação. Alterações de carga garantem potência adequada e segurança. Nossa equipe oferece dimensionamento elétrico para construções, assegurando estabilidade e segurança. O projeto elétrico prévio reduz custos e aumenta a segurança."]
+            benefits: ["As instalações elétricas são fundamentais e são mais do que apenas cabos e fios. Existe também a parte burocrática, aquela documentação que precisa ser aprovada pela distribuidora de energia ou aquela mudança nas instalações que precisa realizada por um profissional qualificado. Clique em VER MAIS e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         }
     ]
 }

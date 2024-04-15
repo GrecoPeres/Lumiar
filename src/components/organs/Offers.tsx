@@ -1,5 +1,5 @@
 import { Image } from "../atoms/Image"
-import Offer from "../../assets/luminar/lumiar-IA.jpeg"
+import Offer from "../../assets/luminar/COMPROMISSO.jpg"
 import { Text } from "../atoms/Text"
 import { OfferTexts } from "../particles/Data"
 import { List } from "../atoms/List"
@@ -28,7 +28,7 @@ const Offers = () => {
         <section className="w-full h-auto flex items-center bg-zinc-900">
             <main className="w-full lg:h-[800px] grid md:grid-cols-2 items-center gap-10 md:gap-0 lg:gap-0 ">
                 <div className="w-full md:h-[800px] h-[300px] grid">
-                    <Image alt="Offer Image" objectCover="object-cover" className="md:h-[800px] h-[300px]" image={Offer} />
+                    <Image alt="Offer Image" className="md:h-[800px] h-[300px]" image={Offer} />
                 </div>
                 <div className="h-full w-full lg:px-10 px-4 flex flex-col lg:justify-center md:justify-end justify-center items-start md:gap-20 lg:gap-24 gap-16">
                     <Fade className="w-full">

@@ -101,7 +101,7 @@ const HeroSection = () => {
                     ))
                 }
             </Slider>
-            <div className="flex justify-end lg:justify-start items-center gap-4 absolute lg:bottom-10 md:bottom-5 md:right-10 right-4 bottom-4">
+            <div className="flex justify-end lg:justify-start items-center gap-4 absolute lg:bottom-10 md:bottom-5 md:right-15 right-4 bottom-4">
                 <Button onClick={previous} type="button" className="w-8 h-8 border rounded-full border-amber-500 flex items-center justify-center text-amber-500 hover:text-red-500 hover:border-red-500">
                     <ArrowCircleLeft size={20} color="currentColor" weight="light" />
                 </Button>
