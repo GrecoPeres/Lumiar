@@ -57,8 +57,8 @@ const Contact = () => {
                     <div className="lg:w-1/2 pr-4 flex flex-col justify-center items-center">
                         <div className="mb-4 w-full">
                             <Text as="p" className="text-zinc-300 text-2xl">
-                                <MapPin size={23} className="inline-block mr-2 text-amber-500" /> Rua José Antônio Ferrari, 313, Jardim Santa Cruz <br/>
-                                <MapPin size={23} className="inline-block mr-2 text-amber-500" /> Taquaritinga / SP, 15906-282
+                                <MapPin size={23} className="inline-block mr-2 text-amber-500" /> Rua Cavalheiro Torquato Rizzi, 1600 Jardim Irajá <br/>
+                                <MapPin size={23} className="inline-block mr-2 text-amber-500" /> Ribeirão Preto/SP 14020-348
                             </Text>
                         </div>
                         <div className="w-full">
@@ -87,7 +87,7 @@ const Contact = () => {
                     <div className="lg:w-1/2 pl-4 mt-4">
                         <div className="lg:w-3/4 mx-auto mb-4 mt-4 w-full">
                             <Text as="p" className="text-zinc-300 text-1xl">
-                                <WhatsappLogo size={23} className="inline-block mr-2 text-amber-500" /> (16) 997404-5100
+                                <WhatsappLogo size={23} className="inline-block mr-2 text-amber-500" /> (16) 97404-5100
                             </Text>
                             <Text as="p" className="text-zinc-300 text-1xl">
                                 <Envelope size={23} className="inline-block mr-2 text-amber-500" /> orcamentos@lumiarsolucoes.com.br

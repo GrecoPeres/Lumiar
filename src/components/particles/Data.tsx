@@ -145,18 +145,33 @@ export const TestimonialTexts = {
     secondText: "Feedback dos clientes",
     feedBacks: [
         {
-            text: "Contratamos a equipe de proteção contra incêndio para desenvolver um projeto de segurança em nossa empresa, e ficamos extremamente satisfeitos com os resultados.",
+            text: "Os especialistas da empresa não apenas nos forneceram as soluções, como também nos educaram sobre a importância da prevenção contra incêndios",
             person: "João Victor",
             type: "Cliente"
         },
         {
-            text: "A empresa de proteção contra incêndio demonstrou um profundo conhecimento em prevenção e segurança contra incêndio. ",
+            text: "Realizei a compra de placas de sinalização e extintores, fiquei muito satisfeita com a instalação dos itens, além da orientação sobre incêndio, extremamente atenciosos e cuidadosos",
             person: "Carlos Perreira",
             type: "Cliente"
         },
         {
-            text: "Os especialistas em proteção contra incêndio não apenas nos forneceram soluções eficazes, mas também nos educaram sobre a importância da prevenção.",
+            text: "Solicitei a renovação do alvará CLCB da minha empresa e fiquei satisfeita pelo atendimento e suporte dado durante o processo.",
             person: "Pedro Gomes",
+            type: "Cliente"
+        },
+        {
+            text: "Precisei realizar a renovação do meu AVCB, e adorei a forma como fui assessorado, fui muito bem orientada e o processo foi rápido e sem burocracias.",
+            person: "Greco Peres",
+            type: "Cliente"
+        },
+        {
+            text: "Precisava da instalação de acionadores manuais e de detectores de fumaça, além da instalação, recebi orientações sobre os equipamentos correto a utilizar e sobre como os equipamentos funcionam. Foi esclarecedor pois foi a primeira vez que me explicaram sobre o assunto.",
+            person: "Andre Costa Silva",
+            type: "Cliente"
+        },
+        {
+            text: "A equipe realizou a manutenção do nosso sistema de alarme de forma rápida e eficaz, minimizando qualquer interrupção nas operações diárias da minha empresa. A comunicação durante o processo proporcionou tranquilidade quanto ao andamento dos trabalhos.",
+            person: "Paulo Sergio",
             type: "Cliente"
         }
     ],
@@ -275,10 +290,15 @@ export const FooterTexts = {
         caption: "Contato",
         names: [
           {
-            name: "Rua José Antônio Ferrari, 313, Jardim Santa Cruz - Taquaritinga / SP, 15906-282",
+            name: "Rua Cavalheiro Torquato Rizzi, 1600 Jardim Irajá - Ribeirão Preto/SP 14020-348",
             emails: [],
             phones: []
           },
+           {
+            name: "Unidades em: Ribeirão Preto, Barretos e Bebedouro",
+            emails: [],
+            phones: []
+          }, 
           {
             name: "engenharia@lumiarsolucoes.com.br",
             emails: [

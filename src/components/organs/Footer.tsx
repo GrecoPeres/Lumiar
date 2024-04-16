@@ -14,8 +14,10 @@ const Footer = () => {
             case 0:
                 return <MapPin size={20} color="currentColor" />;
             case 1:
-                return <EnvelopeSimple size={20} color="currentColor" />;
+                return <MapPin size={20} color="currentColor" />;
             case 2:
+                return <EnvelopeSimple size={20} color="currentColor" />; 
+            case 3:
                 return <Phone size={20} color="currentColor" />
         }
     }, [])
