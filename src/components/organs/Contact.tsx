@@ -15,13 +15,13 @@ const Contact = () => {
     };
 
     const center = {
-        lat: Number('-21.209281'),
-        lng: Number('-47.801922'),
+        lat: Number('-21.209399'),
+        lng: Number('-47.801844'),
     };
 
     const markerPosition = {
         lat: Number('-21.209'),
-        lng: Number('-47.800'),
+        lng: Number('-47.801'),
     };
 
     const sendEmail = (e: any) => {
@@ -33,14 +33,19 @@ const Contact = () => {
             setErrorMessage('Por favor, preencha todos os campos para encaminhar sua mensagem');
             return;
         }
-
         emailjs.sendForm('service_ipezdsj', 'template_0zkb67c', e.target, 'sbAbAzI6EPaI1LHjv')
             .then((result) => {
                 console.log(result.text);
                 setEmailStatus('success');
+                setTimeout(() => {
+                    setEmailStatus('');
+                }, 3000);
             }, (error) => {
                 console.log(error.text);
                 setEmailStatus('error');
+                setTimeout(() => {
+                    setEmailStatus('');
+                }, 3000);
             });
         e.target.reset();
     };
