@@ -33,7 +33,7 @@ const Contact = () => {
             setErrorMessage('Por favor, preencha todos os campos para encaminhar sua mensagem');
             return;
         }
-        emailjs.sendForm('service_ipezdsj', 'template_0zkb67c', e.target, 'sbAbAzI6EPaI1LHjv')
+        emailjs.sendForm('service_k2c3jql', 'template_si6p7qm', e.target, 'RyY2mSc2NDDk4HmiU')
             .then((result) => {
                 console.log(result.text);
                 setEmailStatus('success');

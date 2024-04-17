@@ -39,27 +39,32 @@ export const HeroTexts = [
     {
         Heading: "AVCB e CLCB",
         Paragraph: `Desenvolvemos o Projeto de Prevenção e Combate a Incêndio de forma personalizada, visando a otimização dos recursos de modo a apresentar o melhor custo-benefício para os nossos parceiros; `,
-        Button: "Ver mais!"
+        Button: "Ver mais!",
+        category: "avcb-clcb"
     },
     {
         Heading: "LAUDOS",
         Paragraph: `Possuímos equipe qualificada e em constante processo de treinamento e atualização, o que permite o cumprimento dos prazos estabelecidos e o elevado nível de qualidade das obras;`,
-        Button: "Ver mais!"
+        Button: "Ver mais!",
+        category: "laudos"
     },
     {
         Heading: "PROJETOS",
         Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
-        Button: "Ver mais!"
+        Button: "Ver mais!",
+        category: "projetos"
     },
     {
         Heading: "OBRAS E MANUTENÇÕES",
         Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
-        Button: "Ver mais!"
+        Button: "Ver mais!",
+        category: "obras_manutencao"
     },
     {
         Heading: "SERVIÇOS ELÉTRICOS",
         Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
-        Button: "Ver mais!"
+        Button: "Ver mais!",
+        category: "servicos_eletricos"
     }
 ]
 

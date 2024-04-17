@@ -1,9 +1,10 @@
 import { useCallback, useRef } from "react";
-import { Image } from "../atoms/Image"
-import avcb from "../../assets/luminar/AVCB_e_CLCB.jpg";
+import { useNavigate } from 'react-router-dom';
+import { Image } from "../atoms/Image";
+import avcb from "../../assets/luminar/AVCB-CLCB-HERO-ORI.jpeg";
 import laudos from "../../assets/luminar/LAUDOS.jpg";
 import projetos from "../../assets/luminar/PROJETOS.jpg";
-import obras_manutencao from "../../assets/luminar/lumiar-IA.jpeg";
+import obras_manutencao from "../../assets/luminar/OBRAS_MANUTENCOES.jpg";
 import servicos_eletricos from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
 import { HeroTexts } from "../particles/Data";
 import Slider from "react-slick";
@@ -13,24 +14,22 @@ import { ArrowCircleLeft, ArrowCircleRight } from "@phosphor-icons/react";
 import StickyIcons from "../molecules/StickyIcons";
 import { Slide, Zoom } from "react-awesome-reveal";
 
-
 const HeroSection = () => {
-
+    const navigate = useNavigate();
     const sliderRef = useRef<Slider | null>();
 
     // Function for next button
     const next = () => {
         if (sliderRef.current) {
             sliderRef.current.slickNext();
-
         }
     };
+
     // function for previous button
     const previous = () => {
         if (sliderRef.current) {
             sliderRef.current.slickPrev();
         }
-
     };
 
     const settings = {
@@ -42,6 +41,11 @@ const HeroSection = () => {
         autoplaySpeed: 5000,
         pauseOnHover: true,
         cssEase: "linear",
+    };
+
+    // aki é onde redirecionar para a nova página com a categoria do card - NAÕ ESQUECER
+    const handleVerMais = (category: string) => {
+        navigate(`/nova-pagina/${category}`);
     };
 
     const renderProfileImg = useCallback((element: number) => {
@@ -59,7 +63,8 @@ const HeroSection = () => {
             default:
                 return "";
         }
-    }, [])
+    }, []);
+
     return (
         <section className="w-full h-auto bg-gradient-to-r from-red-500 to-amber-500 relative overflow-x-hidden">
             <Slider ref={(slider) => (sliderRef.current = slider)} {...settings} className="h-full">
@@ -84,20 +89,14 @@ const HeroSection = () => {
                                 
                                 <div className="flex items-center gap-8">
                                     <Slide direction="up">
-                                        <Button type="button" className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500">
+                                        <Button onClick={() => handleVerMais(hero.category)} type="button" className="px-10 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500">
                                             {hero.Button}
                                         </Button>
                                     </Slide>
-                                    {/* <Slide direction="up">
-                                        <a href="/" className="flex items-center gap-2 text-red-500 hover:text-amber-500 group">
-                                            <Text as="span" className="text-zinc-100 group-hover:text-amber-500 uppercase text-xs">Watch reviews</Text>
-                                        </a>
-                                    </Slide> */}
                                 </div> 
                                
                             </div>
                         </main>
-
                     ))
                 }
             </Slider>
@@ -113,7 +112,7 @@ const HeroSection = () => {
             <StickyIcons />
 
         </section>
-    )
-}
+    );
+};
 
-export default HeroSection
+export default HeroSection;

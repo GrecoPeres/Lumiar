@@ -1,8 +1,8 @@
 import React from "react";
 import { Image } from "../atoms/Image";
 import { Text } from "../atoms/Text";
-import AVCB from "../../assets/luminar/avcb.jpg";
-import CLCB from "../../assets/luminar/clcb.jpg";
+import AVCB from "../../assets/luminar/avcb-new.jpeg";
+import CLCB from "../../assets/luminar/clcb-new.jpeg";
 // import Laudos_INCENDIO from "../../assets/luminar/LAUDO_COMBATE_INCENDIO.jpg";
 import Laudos_ELETRICO from "../../assets/luminar/LAUDO_ELÉTRICO.png";
 import Laudos_ESTANQUEIDADE from "../../assets/luminar/LAUDO_ESTANQUEIDADE.jpg";
@@ -33,7 +33,7 @@ const NovaPagina = () => {
           descricao: 'LAUDO ESTANQUEIDADE (GÁS GLP OU GÁS NATURAL)',
           conteudo: 'O Laudo de estanqueidade visa o teste da tubulação de gás, onde será atestada a conformidade de todo o sistema, assim como a central GLP, tubulação e materiais aplicados. O teste é feito mediante a presença do técnico especializado com equipamento específico e após a conclusão é gerado o laudo de conformidade quando atestado toda a conformidade das instalações.',
           imagem: Laudos_ESTANQUEIDADE,
-          descricao2: 'LAUDO SISTEMA DE PROTEÇÃO E COMBATE A INCÊNDIOS - SPCI (ALARME, DETECÇÃO, DETECÇÃO)',
+          descricao2: 'LAUDO SISTEMA DE PROTEÇÃO E COMBATE A INCÊNDIOS - SPCI',
           conteudo2: 'O laudo para SPCI se dá pela análise completa das medidas de segurança contra incêndio instaladas na edificação, visando a correta aplicação das mesmas com base nos decretos e instruções técnicas vigentes. De acordo com o tipo de ocupação, medidas de segurança específicas são aplicadas e um técnico irá até a sua edificação verificar todas as medidas instaladas. Caso haja alguma divergência em relação as normas ou, se verificado alguma falha de funcionamento, será necessária a adequação dos pontos levantados. Após constatada toda conformidade do sistema, um laudo é gerado e assinado por engenheiro responsável.',
           imagem2: Laudos_COMBATE,
           descricao3: 'LAUDO POPULACIONAL',

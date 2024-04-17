@@ -1,6 +1,8 @@
 import { Fade } from "react-awesome-reveal";
-import Image3 from "../../assets/luminar/bomber-11_min.jpg";
-import Image4 from "../../assets/luminar/4.jpeg";
+// import Image3 from "../../assets/luminar/bomber-11_min.jpg";
+import Image3 from "../../assets/luminar/IMAGE-ABOUT-NEW-1.jpg";
+// import Image4 from "../../assets/luminar/4.jpeg";
+import Image4 from "../../assets/luminar/IMAGE-ABOUT-NEW-2.jpg";
 import StickyIcons from "../molecules/StickyIcons";
 import Image5 from "../../assets/luminar/foto_bomber_min.jpg"
 import Image6 from "../../assets/luminar/foto_bomber2_min.jpg"
