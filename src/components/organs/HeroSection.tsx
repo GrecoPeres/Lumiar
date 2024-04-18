@@ -1,7 +1,7 @@
 import { useCallback, useRef } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Image } from "../atoms/Image";
-import avcb from "../../assets/luminar/Hero-New-1.png";
+import avcb from "../../assets/luminar/Hero-New.png";
 import laudos from "../../assets/luminar/LAUDOS.jpg";
 import projetos from "../../assets/luminar/PROJETOS.jpg";
 import obras_manutencao from "../../assets/luminar/OBRAS_MANUTENCOES.jpg";
