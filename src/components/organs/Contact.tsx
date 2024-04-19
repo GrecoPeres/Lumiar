@@ -15,13 +15,13 @@ const Contact = () => {
     };
 
     const center = {
-        lat: Number('-21.209399'),
-        lng: Number('-47.801844'),
+        lat: Number('-21.209413'),
+        lng: Number('-47.801855'),
     };
 
     const markerPosition = {
-        lat: Number('-21.209'),
-        lng: Number('-47.801'),
+        lat: Number('-21.209413'),
+        lng: Number('-47.801855'),
     };
 
     const sendEmail = (e: any) => {
