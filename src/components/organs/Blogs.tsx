@@ -31,11 +31,11 @@ const Blogs = () => {
   const renderImage = (element: number) => {
     switch (element) {
         case 0:
-            return Image3;
+            return Image1;
         case 1:
             return Image2;
         case 2:
-            return Image1;
+            return Image3;
         default:
             return "";
     }
