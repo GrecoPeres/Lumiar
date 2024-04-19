@@ -38,31 +38,31 @@ export const NavLinks = [
 export const HeroTexts = [
     {
         Heading: "AVCB e CLCB",
-        Paragraph: `Desenvolvemos o Projeto de Prevenção e Combate a Incêndio de forma personalizada, visando a otimização dos recursos de modo a apresentar o melhor custo-benefício para os nossos parceiros; `,
+        Paragraph: `A emissão do Auto de Vistoria do corpo de Bombeiros (AVCB) e do Certificado de Licença do Corpo de Bombeiros (CLCB) é obrigatória para todas as edificações comerciais, industriais e residenciais multifamiliares. Mantenha seu patrimônio seguro! Tire suas dúvidas e entre em contato através do ícone ao lado.`,
         Button: "Ver mais!",
         category: "avcb-clcb"
     },
     {
         Heading: "LAUDOS",
-        Paragraph: `Possuímos equipe qualificada e em constante processo de treinamento e atualização, o que permite o cumprimento dos prazos estabelecidos e o elevado nível de qualidade das obras;`,
+        Paragraph: `Laudos são documentos essenciais e obrigatórios para a comprovação da conformidade da edificação. Emitimos diversos laudos como os de medidas de segurança contra incêndio, estanqueidade de gás GLP e gás natural, laudo populacional e laudos elétricos. Tire suas dúvidas e entre em contato através do ícone ao lado.`,
         Button: "Ver mais!",
         category: "laudos"
     },
     {
         Heading: "PROJETOS",
-        Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
+        Paragraph: `Os projetos são necessários para atender as necessidades iniciais de qualquer obra, onde viabilizam custos e reduzem erros de execução. Para elaborar, atualizar ou executar seu projeto de combate a incêndio ou elétrica, entre em contato e tire suas dúvidas através do ícone ao lado.`,
         Button: "Ver mais!",
         category: "projetos"
     },
     {
         Heading: "OBRAS E MANUTENÇÕES",
-        Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
+        Paragraph: `Manutenções são necessárias para todos os sistemas existentes, não sendo diferente para o sistema de incêndio. Damos suporte para todos os equipamentos e circuitos, além de executar alterações e ampliações, caso necessário. Tire suas dúvidas e entre em contato através do ícone ao lado.`,
         Button: "Ver mais!",
         category: "obras_manutencao"
     },
     {
         Heading: "SERVIÇOS ELÉTRICOS",
-        Paragraph: "Fazemos o acompanhamento de todo o processo junto ao Corpo de Bombeiros, assessorando nossos clientes de maneira clara e objetiva.",
+        Paragraph: `As instalações elétricas da sua edificação é parte fundamental do funcionamento do seu negócio, para isso temos uma equipe especializada para atender a sua necessidade, seja com documentações junto a companhia de força e luz, como para ampliar e melhorar suas instalações. Tire suas dúvidas e entre em contato através do ícone ao lado.`,
         Button: "Ver mais!",
         category: "servicos_eletricos"
     }
@@ -187,29 +187,26 @@ export const BlogTexts = {
     secondText: "Últimas Notícias",
     blogNews: [
         {
-            caption: "Iluminação de emergência",
+            caption: "Emissão rápida do Certificado de Licença do Corpo de Bombeiros (CLCB)",
             title: ``,
-            paragraph: `A iluminação de emergência deve permitir o clareamento das rotas de fuga no momento do abandono da edificação, bem como, possibilitar o controle visual das áreas abandonadas para localizar pessoas impedidas de locomover-se.
-            Deve ser corretamente projetada, a fim de atingir os objetivos propostos, bem como ser executada seguindo as normativas previstas na IT 18/2019 e NBR 10.898.
-            A Lumiar Soluções conta com equipe qualificada para o desenvolvimento de projeto e instalação e manutenção da iluminação de emergência na sua edificação. Para saber mais, entre em contato conosco através dos links abaixo.`,
+            paragraph: `Emissão ou renovação do seu Certificado de licença do corpo de bombeiros (CLCB) em até 15 dias. Uma vistoria é realizada gratuitamente para que seja analisado todos as medidas de segurança contra incêndio necessárias para a sua edificação, além de assessoria completa junto ao corpo de bombeiros.`,
             time: "",
             author: "",
             comments: ""
         },
         {
-            caption: "Sinalização de emergência",
+            caption: "Por que emitir o AVCB e CLCB ?",
             title: ``,
-            paragraph: `Conforme a NBR 13.434, a sinalização de segurança contra incêndio e pânico tem como objetivo reduzir o risco de ocorrência de incêndio, alertando para os riscos existentes e garantir que sejam adotadas ações adequadas à situação de risco, que orientem as ações de combate e facilitem a localização dos equipamentos e das rotas de saída para abandono seguro da edificação em caso de incêndio.
-            A Lumiar Soluções conta com equipe qualificada para o desenvolvimento de projeto e instalação e manutenção da sinalização de emergência na sua edificação. Para saber mais entre em contato conosco através dos links abaixo.`,
+            paragraph: `Quais os riscos de não se ter o Auto de Vistoria do Corpo de Bombeiros (AVCB) e o Certificado de Licença do Corpo de Bombeiros (CLCB)?
+            Edificações que não possuem o AVCB ou CLCB, estão sujeitas à advertência, multas de R$ 265,30 à R$ 265.300,00 (de acordo com a gravidade da infração), cassação da licença e interdição do imóvel.`,
             time: "",
             author: "",
             comments: ""
         },
         {
-            caption: "Brigada de Incêndio",
-            title: ``,
-            paragraph: `A brigada de incêndio atua em edificações e áreas de risco, na prevenção e no combate ao princípio de incêndio, abandono de área e primeiros socorros, visando, em caso de sinistro, proteger a vida e o patrimônio, reduzir os danos ao meio ambiente, até a chegada do socorro especializado.
-            A Lumiar Soluções possui profissionais especialistas, que vão te auxiliar na composição, formação e implantação da Brigada de incêndio. Se precisa de treinamento ou atualização da Brigada de incêndio do seu estabelecimento/edificação, entre em contato conosco.`,
+            caption: "DICA DE SEGURANÇA",
+            title: `DICA RÁPIDA SOBRE INCÊNDIO.`,
+            paragraph: `Dependendo da ocorrência, como em caso de princípio de incêndio fogo, pode-se utilizar extintores ou a mangueira de emergência. Em situações maiores, deve-se ligar para os Bombeiros (número 193) e buscar a rota de fuga. Jamais utilizar os elevadores, já que os sistemas elétricos podem ser desligados devido ao fogo. Use as escadas de emergência e feche sempre as portas corta- fogo para evitar que a fumaça e as chamas invadam o local.`,
             time: "",
             author: "",
             comments: ""
