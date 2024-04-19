@@ -69,7 +69,7 @@ input[type=number] {
   .center-div{
     justify-content: center !important;
     text-align: center !important;
-    align-itens: center !important;
+    align-items: center !important;
   }
 
 @keyframes pulse {
