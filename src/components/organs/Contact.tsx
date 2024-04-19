@@ -4,6 +4,7 @@ import { WhatsappLogo, Envelope, MapPin } from "@phosphor-icons/react";
 import { Button } from "../atoms/Button";
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import emailjs from 'emailjs-com';
+import StickyIcons from '../molecules/StickyIcons';
 
 const Contact = () => {
     const [emailStatus, setEmailStatus] = useState('');
@@ -141,6 +142,7 @@ const Contact = () => {
                     </div>
                 </div>
             </main>
+            <StickyIcons />
         </section>
     );
 };

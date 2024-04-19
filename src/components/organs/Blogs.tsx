@@ -12,6 +12,7 @@ import { Button } from "../atoms/Button";
 // import BlogModal from './BlogModal'; // modal
 // import { ChatsCircle, Clock } from "@phosphor-icons/react";
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
+import StickyIcons from '../molecules/StickyIcons';
 
 const Blogs = () => {
   const [readMoreIndex, setReadMoreIndex] = useState(-1);
@@ -118,6 +119,7 @@ const Blogs = () => {
           </Dialog>
         )}
       </main>
+      <StickyIcons />
     </section>
   );
 };

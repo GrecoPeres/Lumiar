@@ -1,11 +1,9 @@
 import { Text } from "../atoms/Text"
 import { TestimonialTexts } from "../particles/Data";
-
+import StickyIcons from "../molecules/StickyIcons";
 import Slider from "react-slick";
 import { Card } from "../molecules/Card";
-
 import { Star, StarHalf } from "@phosphor-icons/react";
-
 
 const Testimonials = () => {
 
@@ -105,7 +103,7 @@ const Testimonials = () => {
                 </div>
 
             </main>
-
+            <StickyIcons />
         </section>
     )
 }
