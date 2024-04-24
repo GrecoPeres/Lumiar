@@ -62,7 +62,7 @@ export const HeroTexts = [
     },
     {
         Heading: "SERVIÇOS ELÉTRICOS",
-        Paragraph: `As instalações elétricas da sua edificação é parte fundamental do funcionamento do seu negócio, para isso temos uma equipe especializada para atender a sua necessidade, seja com documentações junto a companhia de força e luz, como para ampliar e melhorar suas instalações. Tire suas dúvidas e entre em contato através do ícone ao lado.`,
+        Paragraph: `As instalações elétricas da sua edificação são parte fundamental do funcionamento do seu negócio, para isso temos uma equipe especializada para atender a sua necessidade, seja com documentações junto a companhia de força e luz, como para ampliar e melhorar suas instalações. Tire suas dúvidas e entre em contato através do ícone ao lado.`,
         Button: "Ver mais!",
         category: "servicos_eletricos"
     }

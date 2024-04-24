@@ -67,8 +67,8 @@ const NavBar = () => {
                     <section className="w-full px-4 py-6 flex flex-col gap-16">
                         <div className="w-full flex pt-5 px-4 justify-between items-center">
                             <Link to={`/`} className="font-extrabold text-2xl">
-                                <span className=" text-white ">Lumi</span>
-                                <span className=" text-amber-500">ar</span>
+                                {/* <span className=" text-white "></span> */}
+                                <span className=" text-amber-500">Lumiar</span>
                             </Link>
                             <div className="hamburger text-white cursor-pointer" onClick={handleToggle}>
                                 <ArrowCircleRight size={25} color="currentColor" weight="light" />

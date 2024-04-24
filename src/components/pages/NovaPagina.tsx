@@ -47,10 +47,10 @@ const NovaPagina = () => {
         return {
           titulo: 'AVCB e CLCB',
           descricao: 'AVCB',
-          conteudo2: 'Auto de Vistoria do Corpo de Bombeiros (AVCB), é o documento obrigatório para edificações acima de 750 m², que apresentam um risco mais elevado para a própria construção e para as pessoas que a frequentam. Cada edificação possui medidas de segurança específicas. Tradicionalmente, quando se trata de AVCB é obrigatório a instalação do sistema de detecção e alarme, hidrantes, iluminação de emergência, entre outros. Para tirar dúvidas sobre quais medidas a sua edificação necessita, entre em contato conosco. Contamos com uma equipe especializada para lhe atender.',
+          conteudo: 'Auto de Vistoria do Corpo de Bombeiros (AVCB), é o documento obrigatório para edificações acima de 750 m², que apresentam um risco mais elevado para a própria construção e para as pessoas que a frequentam. Cada edificação possui medidas de segurança específicas. Tradicionalmente, quando se trata de AVCB é obrigatório a instalação do sistema de detecção e alarme, hidrantes, iluminação de emergência, entre outros. Para tirar dúvidas sobre quais medidas a sua edificação necessita, entre em contato conosco. Contamos com uma equipe especializada para lhe atender.',
           imagem: AVCB,
           descricao2: 'CLCB',
-          conteudo: 'Certificado de Licença do Corpo de Bombeiros (CLCB), é o documento obrigatório para edificações multifamiliares, comerciais e industriais que atuam como ocupação de baixo e médio risco de incêndio, com até 750 m² e até 6m de altura. Cada edificação possui medidas de segurança específicas que são determinadas pela sua ocupação e área total construída. Lembrando que, manter o seu Certificado de Licença do Corpo de Bombeiros e as medidas de proteção e combate a incêndio em dia é obrigatório, pois é muito importante para manter a proteção do seu patrimônio e a segurança de todas as pessoas que frequentam seu ambiente. Entre em contato conosco para mais informações, seja para a primeira emissão, renovação do seu CLCB ou para sanar qualquer dúvida pertinente.',
+          conteudo2: 'Certificado de Licença do Corpo de Bombeiros (CLCB), é o documento obrigatório para edificações multifamiliares, comerciais e industriais que atuam como ocupação de baixo e médio risco de incêndio, com até 750 m² e até 6m de altura. Cada edificação possui medidas de segurança específicas que são determinadas pela sua ocupação e área total construída. Lembrando que, manter o seu Certificado de Licença do Corpo de Bombeiros e as medidas de proteção e combate a incêndio em dia é obrigatório, pois é muito importante para manter a proteção do seu patrimônio e a segurança de todas as pessoas que frequentam seu ambiente. Entre em contato conosco para mais informações, seja para a primeira emissão, renovação do seu CLCB ou para sanar qualquer dúvida pertinente.',
           imagem2: CLCB,
         };
       case 'projetos':
@@ -81,7 +81,7 @@ const NovaPagina = () => {
         };
       case 'servicos_eletricos':
         return {
-          titulo: 'servicos_eletricos',
+          titulo: 'SERVIÇOS ELÉTRICOS',
           descricao: 'ATUALIZAÇÃO DE DADOS DA CONTA DE ENERGIA',
           conteudo: 'A solicitação de alteração de dados cadastrais junto a CPFL é necessária quando há alteração de morador, seja para imóvel próprio ou alugado, o processo é feito a partir dos dados do novo morador. A atualização é importante para que o cliente possa ter acesso a todas as informações referente a sua instalação e estar sempre por dentro dos assuntos pertinentes.',
           imagem: Servicos_ENERGIA,
@@ -91,9 +91,6 @@ const NovaPagina = () => {
           descricao3: 'DIMENSIONAMENTOS',
           conteudo3: 'Caso esteja construindo uma edificação e não tenha muitas informações sobre a parte elétrica, nós contamos com uma equipe especializada de engenheiros eletricistas, que irão realizar todo o dimensionamento elétrico de sua edificação, para que tenha uma instalação estável e segura. O dimensionamento é necessário para que a seção dos cabos, os disjuntores, tomadas e todos os equipamentos, sejam compatíveis com todas as necessidades elétricas que a edificação possua.',
           imagem3: Servicos_DIMENSIONAMENTOS,
-          descricao4: 'PROJETO ELÉTRICO',
-          conteudo4: 'O projeto elétrico é importante para que antes de se iniciar a execução das instalações, haja o conhecimento prévio de tudo que será instalado e o dimensionamento correto dos pontos, por exemplo: onde estão as tomadas 220v, os disjuntores de cada cômodo, quais as proteções e aterramentos que devem ser usados e qual a carga necessária para a edificação. Informações essas que são trazidas claramente com o projeto elétrico antes da execução, o projeto traz facilidade e reduz custo, trazendo também mais segurança.',
-          imagem4: Servicos_ELETRICOS,
         };
       default:
         return {
