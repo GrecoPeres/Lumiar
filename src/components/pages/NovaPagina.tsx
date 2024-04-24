@@ -17,7 +17,7 @@ import Obras_MOTORES from "../../assets/luminar/SISTEMA_MOTORES.png";
 import Servicos_ENERGIA from "../../assets/luminar/ATUALIZACAO_DADOS.png";
 import Servicos_CARGA from "../../assets/luminar/ALTERAÇÃO DE CARGA.png";
 import Servicos_DIMENSIONAMENTOS from "../../assets/luminar/DIMENSIONAMENTOS.png";
-import Servicos_ELETRICOS from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
+//import Servicos_ELETRICOS from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
 import { Fade } from "react-awesome-reveal";
 import { useParams } from 'react-router-dom';
 import StickyIcons from "../molecules/StickyIcons";
