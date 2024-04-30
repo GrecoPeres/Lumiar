@@ -105,28 +105,28 @@ export const MembershipPlans = {
             category: "avcb-clcb",
             duration: "",
             caption: "",
-            benefits: ["AVCB e CLCB são documentos obrigatórios para que a sua edificação esteja regularizada perante o Corpo de Bombeiros. Junto ao documento, vem as responsabilidades e a aplicação das medidas de segurança contra incêndio, as quais garantem a segurança da edificação e das pessoas. Clique em VER MAIS, para ter informações mais detalhadas e se persistir alguma dúvida, entre em contato através do ícone ao lado."]
+            benefits: ["AVCB e CLCB são documentos obrigatórios para que a sua edificação esteja regularizada perante o Corpo de Bombeiros. Junto ao documento, vem as responsabilidades e a aplicação das medidas de segurança contra incêndio, as quais garantem a segurança da edificação e das pessoas. Clique em + INFORMAÇÕES, para ter informações mais detalhadas e se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         },
         {
             amount: "LAUDOS",
             category: "laudos",
             duration: "",
             caption: "",
-            benefits: ["Os laudos garantem que determinados sistemas estejam funcionando da forma correta, como é exigido pelas leis e normas técnicas vigentes. Clique em VER MAIS e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
+            benefits: ["Os laudos garantem que determinados sistemas estejam funcionando da forma correta, como é exigido pelas leis e normas técnicas vigentes. Clique em + INFORMAÇÕES e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         },
         {
             amount: "PROJETOS",
             duration: "projetos",
             category: "projetos",
             caption: "",
-            benefits: ["Os projetos são essenciais para o correto dimensionamento dos mais variados sistemas. Permitem o adequado uso dos materiais e a execução apropriada de uma obra, acarretando em maior economia para o cliente. Clique em VER MAIS e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
+            benefits: ["Os projetos são essenciais para o correto dimensionamento dos mais variados sistemas. Permitem o adequado uso dos materiais e a execução apropriada de uma obra, acarretando em maior economia para o cliente. Clique em + INFORMAÇÕES e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         },
         {
             amount: "OBRAS E MANUTENÇÕES",
             category: "obras_manutencao",
             duration: "",
             caption: "",
-            benefits: ["Existem vários sistemas que contribuem para a prevenção e combate a incêndio, sendo alguns deles e mais comuns, os sistemas de alarme e detecção, sistema de hidrantes e sprinklers e os extintores de incêndio, e todos precisam de manutenção ou serem instalados quando necessário. Para isso, temos uma equipe especializada para lhe atender. Clique em VER MAIS e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
+            benefits: ["Existem vários sistemas que contribuem para a prevenção e combate a incêndio, sendo alguns deles e mais comuns, os sistemas de alarme e detecção, sistema de hidrantes e sprinklers e os extintores de incêndio, e todos precisam de manutenção ou serem instalados quando necessário. Para isso, temos uma equipe especializada para lhe atender. Clique em + INFORMAÇÕES e tenha informações mais detalhadas sobre o assunto. Se persistir alguma dúvida, entre em contato através do ícone ao lado."]
         },
         {
             amount: "SERVIÇOS ELÉTRICOS",

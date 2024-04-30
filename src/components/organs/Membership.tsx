@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import avcb from "../../assets/luminar/AVCB_e_CLCB.jpg";
 import laudos from "../../assets/luminar/LAUDOS.jpg";
@@ -19,9 +19,23 @@ import StickyIcons from '../molecules/StickyIcons';
 const Membership = () => {
   const navigate = useNavigate();
   const sliderRef = useRef<Slider | null>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const handleNavigateToNovaPagina = (category: string) => {
     navigate(`/nova-pagina/${category}`);
+  };
+
+  const handleExpand = (index: number) => {
+    setExpandedIndex(index === expandedIndex ? null : index);
+  };
+
+  // Função para limitar o texto e adicionar "..." no final
+  const limitText = (text: string, limit: number) => {
+    if (text.length <= limit) {
+      return text;
+    } else {
+      return text.slice(0, limit) + "...";
+    }
   };
 
   // Configurações do CAROUSEL para CARDS
@@ -79,7 +93,7 @@ const Membership = () => {
           {MembershipPlans.cards.map((card, index) => (
             <Card
               key={index}
-              className={`w-full flex flex-col items-center text-center gap-4 border border-zinc-500 transition-all duration-200 cursor-pointer hover:border-red-500/50 py-10"}`}
+              className={`w-full flex flex-col items-center text-center gap-4 border border-zinc-500 transition-all duration-200 cursor-pointer hover:border-red-500/50 py-10`}
             >
               <img
                 src={index === 0 ? avcb : index === 1 ? laudos : index === 2 ? projetos : index === 3 ? obras_manutencao : index === 4 ? servicos_eletricos : '/caminho-para-imagem-padrao.jpg'}
@@ -89,18 +103,19 @@ const Membership = () => {
               <Text as="h6" className="text-zinc-100 items-center gap-0.5">
                 <span className={`font-extrabold text-2xl`}>{card.amount}</span>
               </Text>
-              <ul className="flex flex-col items-center">
-                {card.benefits.map((benefit, index) => (
-                  <List className="text-zinc-300 text-center py-3 relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-0.5 before:bg-zinc-700 last:before:w-0" key={index}>{benefit}</List>
-                ))}
-              </ul>
+              <div className="text-zinc-300 text-center px-4 mb-4">
+                {expandedIndex === index ? card.benefits[0] : limitText(card.benefits[0], 285)}
+                {card.benefits[0].length > 285 && (
+                  <Button className="text-red-500" onClick={() => handleExpand(index)}>
+                    {expandedIndex === index ? "Ver menos" : "Ver mais"}
+                  </Button>
+                )}
+              </div>
               <Button
-                className="mt-4 mb-3 px-6 font-medium text-white py-2.5 bg-gradient-to-r whitespace-nowrap from-red-500 to-amber-500"
-                type="button"
-                style={{ borderRadius: '30px' }}
+                className="px-4 py-2 text-white bg-gradient-to-r from-red-500 to-amber-500"
                 onClick={() => handleNavigateToNovaPagina(card.category)}
               >
-                Ver mais
+                + Informações
               </Button>
             </Card>
           ))}
