@@ -9,7 +9,7 @@ import { MembershipPlans } from "../particles/Data";
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
 import { Button } from "../atoms/Button";
-import { List } from "../atoms/List";
+//import { List } from "../atoms/List";
 import { useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
