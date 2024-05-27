@@ -184,7 +184,7 @@ export const TestimonialTexts = {
 
 export const BlogTexts = {
     firstText: "Informações",
-    secondText: "Últimas Notícias",
+    secondText: "Saiba mais",
     blogNews: [
         {
             caption: "Emissão rápida do Certificado de Licença do Corpo de Bombeiros (CLCB)",
