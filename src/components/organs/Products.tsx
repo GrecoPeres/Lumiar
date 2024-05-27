@@ -9,7 +9,7 @@ import { Button } from "../atoms/Button";
 import ProductImage1 from "../../assets/luminar/PRODUTO1.jpeg";
 import ProductImage2 from "../../assets/luminar/PRODUTO2.jpeg";
 import ProductImage3 from "../../assets/luminar/PRODUTO3.jpeg";
-import ProductImage4 from "../../assets/luminar/PRODUTO4.jpeg";
+import ProductImage5 from "../../assets/luminar/PRODUTO5.jpeg";
 import StickyIcons from '../molecules/StickyIcons';
 
 const Products = () => {
@@ -36,7 +36,7 @@ const Products = () => {
       case 2:
         return ProductImage3;
       case 3:
-        return ProductImage4;
+        return ProductImage5;
       default:
         return "";
     }

@@ -5,7 +5,7 @@ import laudos from "../../assets/luminar/LAUDOS.jpg";
 import projetos from "../../assets/luminar/PROJETOS.jpg";
 import obras_manutencao from "../../assets/luminar/OBRAS_MANUTENCOES.jpg";
 import servicos_eletricos from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
-import brigada_incendio from "../../assets/luminar/PRODUTO5.jpeg";
+import brigada_incendio from "../../assets/luminar/PRODUTO4.jpeg";
 import { MembershipPlans } from "../particles/Data";
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
