@@ -5,6 +5,7 @@ import laudos from "../../assets/luminar/LAUDOS.jpg";
 import projetos from "../../assets/luminar/PROJETOS.jpg";
 import obras_manutencao from "../../assets/luminar/OBRAS_MANUTENCOES.jpg";
 import servicos_eletricos from "../../assets/luminar/SERVICOS_ELETRICOS.jpg";
+import brigada_incendio from "../../assets/luminar/PRODUTO5.jpeg";
 import { MembershipPlans } from "../particles/Data";
 import { Text } from "../atoms/Text";
 import { Card } from "../molecules/Card";
@@ -96,7 +97,7 @@ const Membership = () => {
               className={`w-full flex flex-col items-center text-center gap-4 border border-zinc-500 transition-all duration-200 cursor-pointer hover:border-red-500/50 py-10`}
             >
               <img
-                src={index === 0 ? avcb : index === 1 ? laudos : index === 2 ? projetos : index === 3 ? obras_manutencao : index === 4 ? servicos_eletricos : '/caminho-para-imagem-padrao.jpg'}
+                src={index === 0 ? avcb : index === 1 ? laudos : index === 2 ? projetos : index === 3 ? obras_manutencao : index === 4 ? servicos_eletricos : index === 5 ? brigada_incendio : '/caminho-para-imagem-padrao.jpg'}
                 alt={`Client ${index + 1}`}
                 className="w-full h-80 object-cover mb-4 rounded-md"
               />
@@ -111,12 +112,14 @@ const Membership = () => {
                   </Button>
                 )}
               </div>
-              <Button
-                className="px-4 py-2 text-white bg-gradient-to-r from-red-500 to-amber-500"
-                onClick={() => handleNavigateToNovaPagina(card.category)}
-              >
-                Ver mais
-              </Button>
+              {index !== 5 && (
+                <Button
+                  className="px-4 py-2 text-white bg-gradient-to-r from-red-500 to-amber-500"
+                  onClick={() => handleNavigateToNovaPagina(card.category)}
+                >
+                  Ver mais
+                </Button>
+              )}
             </Card>
           ))}
         </Slider>
