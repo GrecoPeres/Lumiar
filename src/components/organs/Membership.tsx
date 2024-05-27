@@ -107,7 +107,7 @@ const Membership = () => {
                 {expandedIndex === index ? card.benefits[0] : limitText(card.benefits[0], 285)}
                 {card.benefits[0].length > 285 && (
                   <Button className="text-red-500" onClick={() => handleExpand(index)}>
-                    {expandedIndex === index ? "Ver menos" : "Ver mais"}
+                    {expandedIndex === index ? "Ver menos" : "Continuar lendo"}
                   </Button>
                 )}
               </div>
@@ -115,7 +115,7 @@ const Membership = () => {
                 className="px-4 py-2 text-white bg-gradient-to-r from-red-500 to-amber-500"
                 onClick={() => handleNavigateToNovaPagina(card.category)}
               >
-                + Informações
+                Ver mais
               </Button>
             </Card>
           ))}
