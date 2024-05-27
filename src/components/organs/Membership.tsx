@@ -90,39 +90,46 @@ const Membership = () => {
       </div>
 
       <main className="w-full lg:w-[90%] md:w-[96%] w-[90%] md:grid-cols-4 items-center gap-8 md:gap-4 lg:gap-8 relative">
-        <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
-          {MembershipPlans.cards.map((card, index) => (
-            <Card
-              key={index}
-              className={`w-full flex flex-col items-center text-center gap-4 border border-zinc-500 transition-all duration-200 cursor-pointer hover:border-red-500/50 py-10`}
-            >
-              <img
-                src={index === 0 ? avcb : index === 1 ? laudos : index === 2 ? projetos : index === 3 ? obras_manutencao : index === 4 ? servicos_eletricos : index === 5 ? brigada_incendio : '/caminho-para-imagem-padrao.jpg'}
-                alt={`Client ${index + 1}`}
-                className="w-full h-80 object-cover mb-4 rounded-md"
-              />
-              <Text as="h6" className="text-zinc-100 items-center gap-0.5">
-                <span className={`font-extrabold text-2xl`}>{card.amount}</span>
-              </Text>
-              <div className="text-zinc-300 text-center px-4 mb-4">
-                {expandedIndex === index ? card.benefits[0] : limitText(card.benefits[0], 285)}
-                {card.benefits[0].length > 285 && (
-                  <Button className="text-red-500" onClick={() => handleExpand(index)}>
-                    {expandedIndex === index ? "Ver menos" : "Continuar lendo"}
-                  </Button>
-                )}
-              </div>
-              {index !== 5 && (
-                <Button
-                  className="px-4 py-2 text-white bg-gradient-to-r from-red-500 to-amber-500"
-                  onClick={() => handleNavigateToNovaPagina(card.category)}
-                >
-                  Ver mais
+      <Slider ref={(slider) => (sliderRef.current = slider)} {...settings}>
+        {MembershipPlans.cards.map((card, index) => (
+          <Card
+            key={index}
+            className={`w-full flex flex-col items-center text-center gap-4 border border-zinc-500 transition-all duration-200 cursor-pointer hover:border-red-500/50 py-10`}
+          >
+            <img
+              src={index === 0 ? avcb : index === 1 ? laudos : index === 2 ? projetos : index === 3 ? obras_manutencao : index === 4 ? servicos_eletricos : index === 5 ? brigada_incendio : '/caminho-para-imagem-padrao.jpg'}
+              alt={`Client ${index + 1}`}
+              className="w-full h-80 object-cover mb-4 rounded-md"
+            />
+            <Text as="h6" className="text-zinc-100 items-center gap-0.5">
+              <span className={`font-extrabold text-2xl`}>{card.amount}</span>
+            </Text>
+            <div className="text-zinc-300 text-center px-4 mb-4">
+              {expandedIndex === index ? card.benefits[0] : limitText(card.benefits[0], 286)}
+              {card.benefits[0].length > 287 && index !== 5 && (
+                <Button className="text-red-500" onClick={() => handleExpand(index)}>
+                  {expandedIndex === index ? "Ver menos" : "Continuar lendo"}
                 </Button>
               )}
-            </Card>
-          ))}
-        </Slider>
+            </div>
+            {index === 5 ? (
+              <Button
+              className="px-4 py-2 text-white bg-gradient-to-r from-red-500 to-amber-500"
+              onClick={() => handleNavigateToNovaPagina(card.category)}
+              >
+                Ver mais
+              </Button>
+            ) : (
+              <Button
+                className="px-4 py-2 text-white bg-gradient-to-r from-red-500 to-amber-500"
+                onClick={() => handleNavigateToNovaPagina(card.category)}
+              >
+                Ver mais
+              </Button>
+            )}
+          </Card>
+        ))}
+      </Slider>
 
         <div className="flex justify-center mt-8">
           <Button onClick={previous} type="button" className="w-8 h-8 border rounded-full border-amber-500 flex items-center justify-center text-amber-500 hover:text-red-500 hover:border-red-500">
