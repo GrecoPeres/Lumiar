@@ -247,12 +247,12 @@ export const ProductTexts = {
         description: "Conforme a NBR 13.434, a sinalização de segurança contra incêndio e pânico tem como objetivo reduzir o risco de ocorrência de incêndio, alertando para os riscos existentes e garantir que sejam adotadas ações adequadas à situação de risco, que orientem as ações de combate e facilitem a localização dos equipamentos e das rotas de saída para abandono seguro da edificação em caso de incêndio.",
         detailedDescription: "A Lumiar Soluções conta com equipe qualificada para o desenvolvimento de projeto e instalação e manutenção da sinalização de emergência na sua edificação. Para saber mais entre em contato conosco através dos links abaixo.",
       },
-      {
-        category: "Serviços",
-        name: "Brigada de Incêndio",
-        description: "A brigada de incêndio atua em edificações e áreas de risco, na prevenção e no combate ao princípio de incêndio, abandono de área e primeiros socorros, visando, em caso de sinistro, proteger a vida e o patrimônio, reduzir os danos ao meio ambiente, até a chegada do socorro especializado.",
-        detailedDescription: "A Lumiar Soluções possui profissionais especialistas, que vão te auxiliar na composição, formação e implantação da Brigada de incêndio. Se precisa de treinamento ou atualização da Brigada de incêndio do seu estabelecimento/edificação, entre em contato conosco.",
-      },
+    //   {
+    //     category: "Serviços",
+    //     name: "Brigada de Incêndio",
+    //     description: "A brigada de incêndio atua em edificações e áreas de risco, na prevenção e no combate ao princípio de incêndio, abandono de área e primeiros socorros, visando, em caso de sinistro, proteger a vida e o patrimônio, reduzir os danos ao meio ambiente, até a chegada do socorro especializado.",
+    //     detailedDescription: "A Lumiar Soluções possui profissionais especialistas, que vão te auxiliar na composição, formação e implantação da Brigada de incêndio. Se precisa de treinamento ou atualização da Brigada de incêndio do seu estabelecimento/edificação, entre em contato conosco.",
+    //   },
       {
         category: "Soluções",
         name: "Portas corta fogo",
