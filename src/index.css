@@ -129,6 +129,24 @@ input[type=number] {
     border-radius: 5px;
 }
 
+.image-logo {
+    width: 40%;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .image-logo {
+      width: 20%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .image-logo {
+      width: 28%;
+    }
+  }
+  
+
 @media (min-width: 768px) {
     .md\:right-15 {
         right: 4.5rem;
