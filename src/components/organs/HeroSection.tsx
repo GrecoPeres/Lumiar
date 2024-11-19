@@ -76,7 +76,7 @@ const HeroSection = () => {
                             </Zoom>
 
                             <div className="md:w-[50%] w-full md:h-full h-1/2 absolute md:top-0 top-1/2 right-0 bg-zinc-900 flex flex-col md:justify-center justify-start lg:gap-8 md:gap-4 gap-2 lg:px-20 md:px-6 px-4 overflow-x-hidden">
-                                <Text as="h1" className="lg:text-6xl md:text-4xl text-4xl md:mt-10 mt-10 text-zinc-100 font-extrabold">
+                                <Text as="h1" className={`font-extrabold text-zinc-100 ${hero.Heading === "OBRAS E MANUTENÇÕES" || hero.Heading === "SERVIÇOS ELÉTRICOS" ? "lg:text-4xl md:text-2xl text-2xl" : "lg:text-6xl md:text-4xl text-4xl"} md:mt-10 mt-10`}>
                                     <Slide direction="right">
                                         {hero.Heading}
                                     </Slide>
